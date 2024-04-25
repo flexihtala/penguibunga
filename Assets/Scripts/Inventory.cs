@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public static Dictionary<string, GameObject> PlayerInventory;
+    public static HashSet<string> PlayerInventory;
     // Start is called before the first frame update
     void Start()
     {
-        PlayerInventory = new Dictionary<string, GameObject>();
+        PlayerInventory = new HashSet<string>();
     }
 
     // Update is called once per frame

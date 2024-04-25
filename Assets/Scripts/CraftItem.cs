@@ -1,15 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class PickUpItem : MonoBehaviour
+public class CraftItem : MonoBehaviour
 {
     private bool isTriggered;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -17,10 +17,19 @@ public class PickUpItem : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("item was picked up");
-            Destroy(gameObject);
-            Inventory.PlayerInventory.Add(name);
+            if (Inventory.PlayerInventory.Contains("Nail") && Inventory.PlayerInventory.Contains("Brick"))
+            {
+                Inventory.PlayerInventory.Remove("Nail");
+                Inventory.PlayerInventory.Remove("Brick");
+                Inventory.PlayerInventory.Add("Screwdriver");
+                Debug.Log(Inventory.PlayerInventory.First());
+            }
+            else
+            {
+                Debug.Log("У тебя чего то нет");
+            }
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
