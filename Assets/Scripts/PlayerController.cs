@@ -6,6 +6,7 @@ public class PlayerController : Entity
     public float speed = 5f;
 
     public float jumpForce = 20f;
+    private bool isFacingRight;
 
     private Rigidbody2D rigidbody;
 
@@ -23,6 +24,8 @@ public class PlayerController : Entity
 
         if (Input.GetKeyDown(KeyCode.Space) && Math.Abs(rigidbody.velocity.y) < 1e-6)
             rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+
+        DefineFacing();
     }
 
     public override void Die()
@@ -34,5 +37,22 @@ public class PlayerController : Entity
     public override void ReceiveDamage()
     {
         Die();
+    }
+
+    private void DefineFacing()
+    {
+        if (Input.GetAxisRaw("Horizontal") > 0 && !isFacingRight)
+            Flip();
+        if (Input.GetAxisRaw("Horizontal") < 0 && isFacingRight)
+            Flip();
+    }
+    
+    private void Flip()
+    {
+        var playerScale = gameObject.transform.localScale;
+        playerScale.x *= -1;
+        transform.localScale = playerScale;
+
+        isFacingRight = !isFacingRight;
     }
 }
