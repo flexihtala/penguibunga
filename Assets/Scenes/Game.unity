@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf6567b0ca3ec24fa4f23751dc38519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 56261391}
+  isMoving: 0
   speed: 3
   jumpForce: 17
 --- !u!114 &56261385
@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75452f4abe1451945a22674c9c4182b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 56261391}
   penguinName: 0
   controller: {fileID: 56261384}
   isActive: 1
@@ -785,6 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75452f4abe1451945a22674c9c4182b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 211632863}
   penguinName: 3
   controller: {fileID: 211632855}
   isActive: 0
@@ -892,6 +894,26 @@ PrefabInstance:
     - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_ContactCaptureLayers.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454343441941492280, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454343441941492280, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f8b54e5c4a97024fa89e18684c00cad, type: 3}
+    - target: {fileID: 6563128931269384469, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6563128931269384469, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: animator
@@ -1046,6 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75452f4abe1451945a22674c9c4182b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 519200623}
   penguinName: 1
   controller: {fileID: 519200613}
   isActive: 0
@@ -1075,7 +1098,7 @@ Animator:
   m_GameObject: {fileID: 519200609}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e91d494c55d10b43ab83897fb940f99, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1996,7 +2019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf6567b0ca3ec24fa4f23751dc38519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1921824499}
+  isMoving: 0
   speed: 5
   jumpForce: 17
 --- !u!114 &1921824489
@@ -2011,6 +2034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75452f4abe1451945a22674c9c4182b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1921824499}
   penguinName: 0
   controller: {fileID: 1921824488}
   isActive: 0
