@@ -9,12 +9,12 @@ public class PlayerController : Entity
     public float jumpForce = 20f;
     private bool isFacingRight;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class PlayerController : Entity
         animator.SetFloat("HorizontalMove", Math.Abs(direction));
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.Space) && Math.Abs(rigidbody.velocity.y) < 1e-6)
-            rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        if (Input.GetKeyDown(KeyCode.Space) && Math.Abs(rb.velocity.y) < 1e-6)
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 
         DefineFacing();
     }
