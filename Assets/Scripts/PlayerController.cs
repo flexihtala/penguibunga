@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class PlayerController : Entity
 {
-    public float speed = 5f;
+    public Animator animator;
+    public float speed = 3f;
 
     public float jumpForce = 20f;
     private bool isFacingRight;
@@ -20,6 +21,7 @@ public class PlayerController : Entity
     private void Update()
     {
         var direction = Input.GetAxis("Horizontal");
+        animator.SetFloat("HorizontalMove", Math.Abs(direction));
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && Math.Abs(rigidbody.velocity.y) < 1e-6)

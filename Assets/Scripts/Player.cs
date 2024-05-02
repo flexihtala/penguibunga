@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private Inventory inventory;
+    
     public PenguinNames penguinName;
 
     public PlayerController controller;
