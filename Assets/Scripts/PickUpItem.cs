@@ -6,6 +6,7 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour
 {
     private bool isTriggered;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,10 @@ public class PickUpItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
+        {
             isTriggered = true;
+            player = other.gameObject;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class DoorInCoridor : MonoBehaviour
+public class DoorPassage : MonoBehaviour
 {
     public GameObject exitDoor;
     private bool isTriggered;
     private GameObject player;
+    public ElectricalPanel electricalPanel;
 
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if (player is not null)
+            if (player is not null && electricalPanel.isGameFinished)
             {
                 var vector3 = player.transform.position;
                 var position = exitDoor.transform.position;
