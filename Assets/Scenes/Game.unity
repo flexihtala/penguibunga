@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 111902105}
   - component: {fileID: 111902104}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Cucumberes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -973,7 +973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455935646634169670, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Name
-      value: Krico
+      value: Kawazaki
       objectReference: {fileID: 0}
     - target: {fileID: 2455935646634169670, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Layer
@@ -6840,7 +6840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455935646634169670, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Name
-      value: Kawazaki
+      value: Krico
       objectReference: {fileID: 0}
     - target: {fileID: 2455935646634169670, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Layer
