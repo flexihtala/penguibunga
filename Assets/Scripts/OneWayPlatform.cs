@@ -7,7 +7,6 @@ public class OneWayPlatform : MonoBehaviour
 {
     public PlatformEffector2D platformEffector;
     private bool isTriggered;
-    // Start is called before the first frame update
     
     private void OnCollisionStay2D(Collision2D other)
     {

@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ElectricalPanel : MonoBehaviour
 {
     private bool isTriggered;
-    public bool isGameFinished;
-    void Update()
+
+    private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
-        {
-            isGameFinished = true;
-        }
+            GameState.IsOverGameWires = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

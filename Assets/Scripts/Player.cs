@@ -4,7 +4,6 @@ public class Player : MonoBehaviour
 {
     public Animator animator;
     public PenguinNames penguinName;
-
     public PlayerController controller;
 
     public bool isActive;

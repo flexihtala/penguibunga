@@ -4,14 +4,13 @@ public class DoorPassage : MonoBehaviour
 {
     public GameObject exitDoor;
     private bool isTriggered;
-    private GameObject player;
-    public ElectricalPanel electricalPanel;
+    private Player player;
 
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if (player is not null && electricalPanel.isGameFinished)
+            if (GameState.IsOverGameWires)
             {
                 var vector3 = player.transform.position;
                 var position = exitDoor.transform.position;
@@ -28,7 +27,7 @@ public class DoorPassage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isTriggered = true;
-            player = other.gameObject;
+            player = other.gameObject.GetComponent<Player>();
         }
     }
 
