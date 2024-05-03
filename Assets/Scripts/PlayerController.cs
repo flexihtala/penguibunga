@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class PlayerController : Entity
+public class PlayerController : MonoBehaviour
 {
     public bool isMoving;
     public float speed = 3f;
@@ -30,16 +30,6 @@ public class PlayerController : Entity
         DefineFacing();
     }
 
-    public override void Die()
-    {
-        Debug.Log("ты бы уже сдох писна, но пока живи");
-        //Destroy(gameObject);
-    }
-
-    public override void ReceiveDamage()
-    {
-        Die();
-    }
 
     private void DefineFacing()
     {
