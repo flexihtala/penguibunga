@@ -32,4 +32,10 @@ public class Player : MonoBehaviour
         animator.SetBool("IsActiveAndMoving", isActive && controller.isMoving);
         controller.enabled = isActive;
     }
+
+    public void Die(Player unit)
+    {
+        unit.gameObject.transform.position = GameState.PlatformerSpawn;
+        Debug.Log("Домой поскуда");
+    }
 }
