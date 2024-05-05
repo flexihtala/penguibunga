@@ -20,10 +20,10 @@ public class CraftItem : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if (Inventory.PlayerInventory.Contains("Nail") && Inventory.PlayerInventory.Contains("Brick"))
+            if (Inventory.PlayerInventory.ContainsKey(ItemName.Nail) && Inventory.PlayerInventory.ContainsKey(ItemName.Brick))
             {
-                Inventory.PlayerInventory.Remove("Nail");
-                Inventory.PlayerInventory.Remove("Brick");
+                Inventory.PlayerInventory.Remove(ItemName.Nail);
+                Inventory.PlayerInventory.Remove(ItemName.Brick);
                 screwdriver.SetActive(true);
                 Debug.Log("Скрафчена отвертка");
             }

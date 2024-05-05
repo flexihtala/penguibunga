@@ -20,7 +20,7 @@ public class OpenVent : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if(Inventory.PlayerInventory.Contains("Screwdriver"))
+            if(Inventory.PlayerInventory.ContainsKey(ItemName.Screwdriver))
                 Destroy(vent);
             else
                 Debug.Log("у тебя нет отвертки");
