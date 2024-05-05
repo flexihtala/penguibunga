@@ -7,9 +7,12 @@ using UnityEngine;
 public class CraftItem : MonoBehaviour
 {
     private bool isTriggered;
+
+    public GameObject screwdriver;
     // Start is called before the first frame update
     void Start()
     {
+        screwdriver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,8 +24,8 @@ public class CraftItem : MonoBehaviour
             {
                 Inventory.PlayerInventory.Remove("Nail");
                 Inventory.PlayerInventory.Remove("Brick");
-                Inventory.PlayerInventory.Add("Screwdriver");
-                Debug.Log(Inventory.PlayerInventory.First());
+                screwdriver.SetActive(true);
+                Debug.Log("Скрафчена отвертка");
             }
             else
             {
