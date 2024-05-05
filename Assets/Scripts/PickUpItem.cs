@@ -21,7 +21,7 @@ public class PickUpItem : MonoBehaviour
         {
             Debug.Log("item was picked up");
             Destroy(gameObject);
-            Inventory.PlayerInventory[item.itemName] = item;
+            Inventory.Add(item);
         }
     }
 

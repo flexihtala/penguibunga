@@ -22,8 +22,8 @@ public class CraftItem : MonoBehaviour
         {
             if (Inventory.PlayerInventory.ContainsKey(ItemName.Nail) && Inventory.PlayerInventory.ContainsKey(ItemName.Brick))
             {
-                Inventory.PlayerInventory.Remove(ItemName.Nail);
-                Inventory.PlayerInventory.Remove(ItemName.Brick);
+                Inventory.Remove(ItemName.Nail);
+                Inventory.Remove(ItemName.Brick);
                 screwdriver.SetActive(true);
                 Debug.Log("Скрафчена отвертка");
             }
