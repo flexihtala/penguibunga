@@ -1046,7 +1046,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0625, y: 0.5625}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.0625, y: 0.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1095,7 +1095,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8db0126636877ad498983590924f6f8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2150,6 +2150,18 @@ PrefabInstance:
     - target: {fileID: 2043256492666132634, guid: 105d9bb43f172204da72457e6117b363, type: 3}
       propertyPath: orthographic size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043256492666132634, guid: 105d9bb43f172204da72457e6117b363, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.050980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043256492666132634, guid: 105d9bb43f172204da72457e6117b363, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043256492666132634, guid: 105d9bb43f172204da72457e6117b363, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.015686275
       objectReference: {fileID: 0}
     - target: {fileID: 3060352021156976789, guid: 105d9bb43f172204da72457e6117b363, type: 3}
       propertyPath: m_Name
@@ -7979,6 +7991,10 @@ PrefabInstance:
     - target: {fileID: 5484576741926858420, guid: 30278480880347c4aa761843aca650b0, type: 3}
       propertyPath: m_Name
       value: Grid 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6718294904380092902, guid: 30278480880347c4aa761843aca650b0, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
