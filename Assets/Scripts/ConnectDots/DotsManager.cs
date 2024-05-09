@@ -34,6 +34,10 @@ public class DotsManager : MonoBehaviour
             foreach (var tile in UncompletedTiles)
                 tile.color = defaultColor;
             CurrentTiles.Clear();
+            isStarted = false;
         }
+
+        if (CompletedColors.Count == 4)
+            GameState.IsOverGameWires = true;
     }
 }
