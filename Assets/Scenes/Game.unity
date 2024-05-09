@@ -8600,6 +8600,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Players
       objectReference: {fileID: 0}
+    - target: {fileID: 896744628961429253, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 855f6338ec3aeba459d1aaff5124645f, type: 2}
+    - target: {fileID: 1560501180756407958, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Name
+      value: Kawazaki
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816771351435387208, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816771351435387208, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2287241139581426827, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.692
@@ -8640,6 +8656,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2369510895668954374, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490554217782032831, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.82410264
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490554217782032831, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.84766966
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490554217782032831, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0784733
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228472967490514506, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: penguinName
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3339167682965959749, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7589636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014207735655002132, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 855f6338ec3aeba459d1aaff5124645f, type: 2}
+    - target: {fileID: 6203149525558338387, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7170199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203149525558338387, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7848535
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203149525558338387, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.90808
+      objectReference: {fileID: 0}
     - target: {fileID: 6203149525558338387, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.51
@@ -8648,6 +8704,54 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.91
       objectReference: {fileID: 0}
+    - target: {fileID: 6948763452344514367, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127072165699771410, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127072165699771410, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: abbb1d25803377a4e87533feb2f74a8d, type: 3}
+    - target: {fileID: 7546486818844692770, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 81b3c1361be76924db86bd3f97104a57, type: 2}
+    - target: {fileID: 7919891647784018304, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Name
+      value: Krico
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939653534256075240, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939653534256075240, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cb582e921468a5b4f807d30a9f454434, type: 3}
+    - target: {fileID: 8165089071107228500, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5026931
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165089071107228500, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5447518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165089071107228500, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.901
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372464993707462675, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 855f6338ec3aeba459d1aaff5124645f, type: 2}
+    - target: {fileID: 8814792446104482361, guid: 0d2b6f0448532c245a2bf90eaacb5ecc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3ff4ca49011f6474b830ec63754e8909, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
