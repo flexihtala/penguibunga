@@ -9,7 +9,7 @@ public class DoorPassage : MonoBehaviour
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
-        {;
+        {
             if (GameState.IsOverGameWires)
             {
                 var vector3 = player.transform.position;

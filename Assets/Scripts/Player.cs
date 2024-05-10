@@ -36,6 +36,5 @@ public class Player : MonoBehaviour
     public void Die(Player unit)
     {
         unit.gameObject.transform.position = GameState.PlatformerSpawn;
-        Debug.Log("Домой поскуда");
     }
 }
