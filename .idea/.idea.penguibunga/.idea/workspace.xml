@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformerRoom/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlatformerRoom/MovingPlatform.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,10 +161,10 @@
           <line>84</line>
           <properties documentPath="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga\Assets\Scripts\PlayerController.cs" initialLine="84" containingFunctionPresentation="Method 'Dash'">
             <startOffsets>
-              <option value="2217" />
+              <option value="2229" />
             </startOffsets>
             <endOffsets>
-              <option value="2233" />
+              <option value="2245" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />

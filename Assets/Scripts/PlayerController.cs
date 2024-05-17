@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
             return;
         
-        if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.RightShift) && canDash && !playerTrigger.isGrounded && !playerTrigger.isOnMovingPlatform)
         {
             StartCoroutine(Dash());
         }

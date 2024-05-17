@@ -5,7 +5,7 @@ public class PlayerTrigger : MonoBehaviour
     public bool isTriggered;
     public bool isGrounded;
     public Player otherPlayer;
-    private bool isOnMovingPlatform;
+    public bool isOnMovingPlatform;
     private MovingPlatform movingPlatform;
 
     private GameObject otherObject;
