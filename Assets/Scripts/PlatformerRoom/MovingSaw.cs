@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovingSaw : Saw
+public class MovingSaw : Killer
 {
     public float DistanceX;
     public float DistanceY;
@@ -10,7 +10,6 @@ public class MovingSaw : Saw
     private bool movingLeft;
     private bool movingUp;
     private float rightEdge;
-
     private float upEdge;
 
 
