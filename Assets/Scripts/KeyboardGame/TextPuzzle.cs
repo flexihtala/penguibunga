@@ -10,7 +10,6 @@ public class TextPuzzle : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
     private string answer = "2 3 5 8";
-    public bool isFinished;
 
     private static List<KeyCode> Alphabet = new()
     {
@@ -28,7 +27,7 @@ public class TextPuzzle : MonoBehaviour
     void Update()
     {
         if (text.text == answer)
-            isFinished = true;
+            GameState.IsOverGameKeyboard = true;
         if (Input.GetKeyDown(KeyCode.Backspace) && text.text.Length > 0)
             text.text = "";
         if (text.text.Length == answer.Length)

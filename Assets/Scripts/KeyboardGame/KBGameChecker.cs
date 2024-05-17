@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class KBGameChecker : MonoBehaviour
 {
-    public TextPuzzle game;
     private SpriteRenderer sprite;
 
     private void Awake()
@@ -15,7 +14,7 @@ public class KBGameChecker : MonoBehaviour
 
     private void Update()
     {
-        if (game.isFinished)
+        if (GameState.IsOverGameKeyboard)
             sprite.color = Color.gray;
     }
 }

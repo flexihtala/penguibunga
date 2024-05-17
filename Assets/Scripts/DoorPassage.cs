@@ -1,7 +1,14 @@
 using UnityEngine;
 
+public enum Door
+{
+    RoomDoor,
+    ToiletDoor
+}
+
 public class DoorPassage : MonoBehaviour
 {
+    public Door doorType;
     public GameObject exitDoor;
     private bool isTriggered;
     private Player player;
@@ -10,7 +17,8 @@ public class DoorPassage : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if (GameState.IsOverGameWires)
+            if ((GameState.IsOverGameWires && doorType == Door.RoomDoor) || 
+                (GameState.IsOverGameKeyboard && doorType == Door.ToiletDoor))
             {
                 var vector3 = player.transform.position;
                 var position = exitDoor.transform.position;
