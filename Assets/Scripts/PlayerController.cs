@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce = 20f;
     public float dashForce = 20f;
-    private bool canDash;
+    private bool canDash = true;
     private float dashCooldown = 1f;
     private float dashTime = 0.2f;
     private bool doubleJump;
@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
             return;
         
+        if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
         var direction = Input.GetAxis("Horizontal");
         isMoving = Math.Abs(direction) > 0.01;
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
@@ -54,14 +58,10 @@ public class PlayerController : MonoBehaviour
         }
 
         
-        if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
-        {
-            StartCoroutine(Dash());
-        }
+        
         DefineFacing();
     }
-
-
+    
 
     private void DefineFacing()
     {
@@ -86,10 +86,11 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         var originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x * dashForce, 0);
+        rb.velocity = new Vector2(-transform.localScale.x * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = originalGravity;
         isDashing = false;
+        rb.velocity = Vector2.zero;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
