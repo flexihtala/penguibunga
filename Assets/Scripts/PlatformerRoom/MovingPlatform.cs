@@ -13,12 +13,21 @@ public class MovingPlatform : MonoBehaviour
     private float rightEdge;
     private float upEdge;
 
+    public bool LeftToRight;
+
 
     public void Awake()
     {
-        leftEdge = transform.position.x - DistanceX;
-        rightEdge = transform.position.x + DistanceX;
-
+        if (LeftToRight)
+        {
+            leftEdge = transform.position.x;
+            rightEdge = transform.position.x + DistanceX;
+        }
+        else
+        {
+            leftEdge = transform.position.x - DistanceX;
+            rightEdge = transform.position.x;
+        }
         upEdge = transform.position.y - DistanceY;
         downEdge = transform.position.y + DistanceY;
     }

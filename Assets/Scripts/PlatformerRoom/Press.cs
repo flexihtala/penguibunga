@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class PressController : Killer
 {
-    public float moveSpeed = 2.0f; // Скорость движения пресса
-    public Transform lowerPoint; // Нижняя точка движения
-    public Transform upperPoint; // Верхняя точка движения
+    public float moveSpeed = 2.0f;
+    public Transform lowerPoint;
+    public Transform upperPoint;
 
-    private bool movingDown = true; // Флаг для направления движения
+    private bool movingDown = true;
 
     private void Start()
     {
