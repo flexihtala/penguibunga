@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
             return;
         
-        if (Input.GetKeyDown(KeyCode.RightShift) && canDash && !playerTrigger.isGrounded && !playerTrigger.isOnMovingPlatform)
+        if (Input.GetKeyDown(KeyCode.RightShift) && canDash && penguinName == PenguinNames.Krico)
         {
             StartCoroutine(Dash());
         }
@@ -44,12 +44,14 @@ public class PlayerController : MonoBehaviour
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             if (playerTrigger.isGrounded || doubleJump)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 if (penguinName == PenguinNames.Krico)
                     doubleJump = !doubleJump;
             }
+        }
 
 
         if (playerTrigger.isGrounded && penguinName == PenguinNames.Krico)
