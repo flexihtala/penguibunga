@@ -35,34 +35,31 @@ public class PlayerTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         otherObject = other.gameObject;
-        if (transform.parent.GetComponent<Player>().isActive && transform.parent.gameObject != other.gameObject &&
-            other.CompareTag("Player"))
+        if (transform.parent.GetComponent<Player>().isActive 
+            && transform.parent.gameObject != other.gameObject 
+            && other.CompareTag("Player"))
         {
             isTriggered = true;
             otherPlayer = otherObject.GetComponent<Player>();
         }
-
         if (other.CompareTag("MovingPlatform"))
         {
             movingPlatform = otherObject.GetComponent<MovingPlatform>();
             isOnMovingPlatform = true;
         }
-
-        if (other.CompareTag("Ground") || other.CompareTag("MovingPlatform")) isGrounded = true;
+        if (other.CompareTag("Ground") || other.CompareTag("MovingPlatform"))
+            isGrounded = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (transform.parent.GetComponent<Player>().isActive && transform.parent.gameObject != other.gameObject &&
-            other.CompareTag("Player"))
+        if (transform.parent.GetComponent<Player>().isActive 
+            && transform.parent.gameObject != other.gameObject 
+            && other.CompareTag("Player"))
             isTriggered = false;
         if (other.CompareTag("Ground") || other.CompareTag("MovingPlatform"))
             isGrounded = false;
-        if (other.CompareTag("MovingPlatform")) isOnMovingPlatform = false;
-    }
-
-    private bool IsValidCollision(Collider2D other)
-    {
-        return parentPlayer.isActive && transform.parent.gameObject != other.gameObject && other.CompareTag("Player");
+        if (other.CompareTag("MovingPlatform"))
+            isOnMovingPlatform = false;
     }
 }

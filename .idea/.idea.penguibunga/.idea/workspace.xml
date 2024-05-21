@@ -7,8 +7,10 @@
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,12 +156,6 @@
           <line>22</line>
           <properties documentPath="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga\Assets\Scripts\PickUpItem.cs" initialLine="21" containingFunctionPresentation="Method 'Update'" />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>86</line>
-          <properties documentPath="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga\Assets\Scripts\PlayerController.cs" initialLine="84" containingFunctionPresentation="Method 'Dash'" />
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

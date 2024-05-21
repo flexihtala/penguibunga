@@ -35,10 +35,10 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
             return;
         
-        if (Input.GetKeyDown(KeyCode.RightShift) && canDash && penguinName == PenguinNames.Krico)
-        {
+        if (Input.GetKeyDown(KeyCode.RightShift)
+            && canDash && penguinName == PenguinNames.Krico
+            && !playerTrigger.isGrounded)
             StartCoroutine(Dash());
-        }
         var direction = Input.GetAxis("Horizontal");
         isMoving = Math.Abs(direction) > 0.01;
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
@@ -52,15 +52,8 @@ public class PlayerController : MonoBehaviour
                     doubleJump = !doubleJump;
             }
         }
-
-
         if (playerTrigger.isGrounded && penguinName == PenguinNames.Krico)
-        {
             doubleJump = true;
-        }
-
-        
-        
         DefineFacing();
     }
     
@@ -78,7 +71,6 @@ public class PlayerController : MonoBehaviour
         var playerScale = gameObject.transform.localScale;
         playerScale.x *= -1;
         transform.localScale = playerScale;
-
         isFacingRight = !isFacingRight;
     }
 
