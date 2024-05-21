@@ -37,7 +37,9 @@ public class DotsManager : MonoBehaviour
             isStarted = false;
         }
 
-        if (CompletedColors.Count == 4)
+        if (CompletedColors.Count >= 9 && UncompletedTiles.Count == 0)
+        {
             GameState.IsOverGameWires = true;
+        }
     }
 }
