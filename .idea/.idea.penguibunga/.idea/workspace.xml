@@ -7,6 +7,8 @@
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/ca/6863999a/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ElectricalPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.19685039&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Platformer&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;All-spikes&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,10 +100,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28740">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="28740" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -133,7 +136,7 @@
       <workItem from="1715339996296" duration="22436000" />
       <workItem from="1715922965371" duration="179000" />
       <workItem from="1715953039056" duration="1163000" />
-      <workItem from="1716294872949" duration="725000" />
+      <workItem from="1716294872949" duration="5532000" />
     </task>
     <servers />
   </component>
@@ -153,6 +156,19 @@
           <line>22</line>
           <properties documentPath="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga\Assets\Scripts\PickUpItem.cs" initialLine="21" containingFunctionPresentation="Method 'Update'" />
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsTile.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga\Assets\Scripts\ConnectDots\DotsTile.cs" initialLine="35" containingFunctionPresentation="Method 'OnMouseOver'">
+            <startOffsets>
+              <option value="1215" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1270" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,12 +1,14 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class DotsTile : MonoBehaviour
 {
     public DotsManager dotsManager;
-    public bool isHeadTile;
+    public bool isHeadTile; 
     private SpriteRenderer sprite;
     private Color endColor;
+    public List<GameObject> adjacentTiles;
 
     private void Awake()
     {
@@ -23,17 +25,23 @@ public class DotsTile : MonoBehaviour
         {
             dotsManager.currentColor = transform.GetChild(0).GetComponent<SpriteRenderer>().color;
             if (dotsManager.isClicked)
+            {
+                sprite.color = dotsManager.currentColor;
+                dotsManager.prevTile = gameObject;
                 dotsManager.isStarted = true;
+            }
         }
-
-        if (dotsManager.isStarted && sprite.color == dotsManager.defaultColor && !dotsManager.CompletedColors.Contains(sprite.color))
+        if (dotsManager.isStarted && sprite.color == dotsManager.defaultColor && !dotsManager.CompletedColors.Contains(sprite.color)
+            && adjacentTiles.Contains(dotsManager.prevTile))
         {
+            if (isHeadTile && dotsManager.currentColor != endColor)
+                return;
             sprite.color = dotsManager.currentColor;
+            dotsManager.prevTile = gameObject;
             dotsManager.CurrentTiles.Add(sprite);
             Debug.Log(endColor);
             Debug.Log(dotsManager.currentColor);
             Debug.Log(isHeadTile);
-            Debug.Log(dotsManager.CurrentTiles.Count);
             if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor.CompareRGB(dotsManager.currentColor))
             {
                 Debug.Log(endColor);
