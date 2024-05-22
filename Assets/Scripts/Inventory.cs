@@ -21,6 +21,8 @@ public class Inventory : MonoBehaviour
     public static void Add(Item item)
     {
         PlayerInventory[item.itemName] = item;
+        if (item.itemName == ItemName.Crowbar)
+            GameState.HaveCrowbar = true;
         if (OnItemChangedCallback != null)
             OnItemChangedCallback.Invoke ();
     }
