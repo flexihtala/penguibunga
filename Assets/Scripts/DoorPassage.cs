@@ -3,7 +3,8 @@ using UnityEngine;
 public enum Door
 {
     RoomDoor,
-    ToiletDoor
+    ToiletDoor,
+    Ventilation
 }
 
 public class DoorPassage : MonoBehaviour
@@ -17,8 +18,9 @@ public class DoorPassage : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            if ((GameState.IsOverGameWires && doorType == Door.RoomDoor) || 
-                (GameState.IsOverGameKeyboard && doorType == Door.ToiletDoor))
+            if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
+                || (GameState.IsOverGameKeyboard && doorType == Door.ToiletDoor)
+                || doorType == Door.Ventilation)
             {
                 var vector3 = player.transform.position;
                 var position = exitDoor.transform.position;
