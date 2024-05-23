@@ -494,8 +494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df26a2a9cb06be44993dc517b55361d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
   exitDoor: {fileID: 0}
-  electricalPanel: {fileID: 4313815704809329002}
 --- !u!1 &4064846878378968077
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83121c28e8a9e11458b70df2a9fffb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  screwdriver: {fileID: 0}
 --- !u!1 &7634611337450688906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,13 +1373,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5205684834021796895, guid: 923b211ee02530b4c884695840cb61a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3648398776970563062}
   m_SourcePrefab: {fileID: 100100000, guid: 923b211ee02530b4c884695840cb61a3, type: 3}
 --- !u!4 &5515801030810656538 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7564999073599365564, guid: 923b211ee02530b4c884695840cb61a3, type: 3}
   m_PrefabInstance: {fileID: 2625679138245017254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7804183473597354681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5205684834021796895, guid: 923b211ee02530b4c884695840cb61a3, type: 3}
+  m_PrefabInstance: {fileID: 2625679138245017254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3648398776970563062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804183473597354681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 1
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 00000000ffb254e2ffb254e2
+  m_ShapePath:
+  - {x: -0.32025528, y: -0.15999985, z: 0}
+  - {x: -0.31739777, y: -0.05861473, z: -0.0000006615629}
+  - {x: 0.2291245, y: -0.07229233, z: -0.0000011340843}
+  - {x: 0.23066823, y: -0.15424728, z: -0.00000090131925}
+  m_ShapePathHash: -838060004
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -73598
+  m_LocalBounds:
+    m_Center: {x: -0.044793516, y: -0.10930729, z: 0}
+    m_Extent: {x: 0.27546176, y: 0.05069256, z: 0}
 --- !u!1001 &3254631109686871181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1655,7 +1694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574f4898c4512144e87bc7889272fd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameFinished: 0
+  dots: {fileID: 0}
+  text: {fileID: 0}
+  line: 
+  textSpeed: 0.1
+  panel: {fileID: 0}
 --- !u!4 &3843224182732028461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8823766066410638055, guid: 03cdcb284f1903441a05b27cbd69dae9, type: 3}
