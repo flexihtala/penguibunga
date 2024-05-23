@@ -149,6 +149,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3279393624396958767}
+  - {fileID: 2778789697696087311}
+  - {fileID: 7508470275481551348}
+  - {fileID: 7722995644038249349}
 --- !u!1 &265040789572892058
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +303,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4966743301624312444}
+  - {fileID: 5226833313443792873}
+  - {fileID: 7692922703441431430}
 --- !u!1 &274886659829838150
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +456,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4262074716857857816}
+  - {fileID: 3021499363652528902}
+  - {fileID: 5544189753851598511}
+  - {fileID: 540541805927114770}
 --- !u!1 &492461131137222949
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +610,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 8489036912073511774}
+  - {fileID: 4262074716857857816}
+  - {fileID: 997287239371071247}
+  - {fileID: 6338343038053691768}
 --- !u!1 &500916484409528626
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +765,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 2039493287367168838}
+  - {fileID: 4392139185907313952}
+  - {fileID: 669685515655812124}
+  - {fileID: 3462119792842173759}
 --- !u!1 &540541805927114770
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +919,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3996880490314021143}
+  - {fileID: 6472703668852049926}
+  - {fileID: 274886659829838150}
+  - {fileID: 8230999946790598784}
 --- !u!1 &561077389335324636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1161,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6668855050605112216}
+  - {fileID: 4837454642596698273}
+  - {fileID: 3191919299024140692}
+  - {fileID: 4852827206343351811}
 --- !u!1 &605767316388724988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2478433025854322823}
+  - {fileID: 7890747888864769479}
+  - {fileID: 6042298633860784025}
 --- !u!1 &669685515655812124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1468,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 8652600316458022125}
+  - {fileID: 8754457269192371520}
+  - {fileID: 500916484409528626}
 --- !u!1 &679693638000173137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1621,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4852827206343351811}
+  - {fileID: 3858673985987243467}
+  - {fileID: 3191919299024140692}
+  - {fileID: 6750439004687905533}
 --- !u!1 &874471786510661299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1776,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 7867940818115229420}
+  - {fileID: 7448614230791132559}
+  - {fileID: 1136069525872551468}
 --- !u!1 &997287239371071247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1930,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 3191919299024140692}
+  - {fileID: 492461131137222949}
+  - {fileID: 3858673985987243467}
+  - {fileID: 3996880490314021143}
 --- !u!1 &1077462233096902055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2084,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1210778219183462571}
+  - {fileID: 3029783656315701288}
+  - {fileID: 2428275163396806799}
+  - {fileID: 6668707696829248763}
 --- !u!1 &1136069525872551468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,6 +2239,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 2508783500411688306}
+  - {fileID: 3279393624396958767}
+  - {fileID: 874471786510661299}
+  - {fileID: 2283667289831570284}
 --- !u!1 &1140523998989522605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2393,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7401432234624104519}
+  - {fileID: 7890747888864769479}
+  - {fileID: 2920126755292424268}
+  - {fileID: 7486295586947451845}
 --- !u!1 &1141997216411217729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2547,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3726970144758777149}
+  - {fileID: 2428275163396806799}
+  - {fileID: 1210778219183462571}
+  - {fileID: 1634783649300148432}
 --- !u!1 &1181729247651020645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +2701,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3029783656315701288}
+  - {fileID: 5268943624842712807}
+  - {fileID: 7492869072120074194}
+  - {fileID: 7716795329619996601}
 --- !u!1 &1210778219183462571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2855,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5116296493269101900}
+  - {fileID: 1077462233096902055}
+  - {fileID: 6811108798166104876}
+  - {fileID: 1141997216411217729}
 --- !u!1 &1250512376119124324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,12 +3066,12 @@ RectTransform:
   m_Children:
   - {fileID: 9218925862530539294}
   - {fileID: 2684554171699469610}
-  - {fileID: 7142346248376749976}
-  - {fileID: 5161692101422322265}
-  - {fileID: 7089100197132403731}
   - {fileID: 947498234061821231}
-  - {fileID: 2668558692511379673}
+  - {fileID: 5161692101422322265}
   - {fileID: 1792704995237470311}
+  - {fileID: 7142346248376749976}
+  - {fileID: 2668558692511379673}
+  - {fileID: 7089100197132403731}
   - {fileID: 5132356191860603564}
   - {fileID: 308122733562688161}
   m_Father: {fileID: 7076153984397243179}
@@ -3144,6 +3230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3105374587831046309}
+  - {fileID: 1141997216411217729}
+  - {fileID: 5329952871040889645}
 --- !u!1 &1688283411000334191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,6 +3471,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2039493287367168838}
+  - {fileID: 3462119792842173759}
+  - {fileID: 4393694010515916062}
 --- !u!1 &1731679424045599938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3530,6 +3624,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7531170113652900002}
+  - {fileID: 7110732048887286200}
+  - {fileID: 4966743301624312444}
 --- !u!1 &1924081712701218662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,6 +3953,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2428275163396806799}
+  - {fileID: 7492869072120074194}
+  - {fileID: 5693404365141711862}
+  - {fileID: 3029783656315701288}
 --- !u!1 &1987050053253991818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,6 +4107,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2283667289831570284}
+  - {fileID: 7508470275481551348}
+  - {fileID: 3279393624396958767}
+  - {fileID: 4240370929290858988}
 --- !u!1 &2039493287367168838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,6 +4261,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 500916484409528626}
+  - {fileID: 8652600316458022125}
+  - {fileID: 1724236273864481963}
 --- !u!1 &2227820149952386586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,14 +4293,14 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3420623088599185425}
   - {fileID: 1814070773131551305}
-  - {fileID: 4362762146805664879}
-  - {fileID: 3712639933145489666}
-  - {fileID: 4627268656157524972}
   - {fileID: 58722991868472615}
-  - {fileID: 2611139528265148210}
+  - {fileID: 3420623088599185425}
+  - {fileID: 3712639933145489666}
   - {fileID: 3460330231659988646}
+  - {fileID: 4362762146805664879}
+  - {fileID: 2611139528265148210}
+  - {fileID: 4627268656157524972}
   - {fileID: 5249278991630230672}
   - {fileID: 9038609828285115881}
   m_Father: {fileID: 7076153984397243179}
@@ -4347,6 +4459,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5268943624842712807}
+  - {fileID: 1987050053253991818}
+  - {fileID: 7686851309914773317}
+  - {fileID: 1136069525872551468}
 --- !u!1 &2380892875338468169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4496,6 +4613,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6811108798166104876}
+  - {fileID: 5391668818475831862}
+  - {fileID: 5116296493269101900}
 --- !u!1 &2428275163396806799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4645,6 +4766,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1141997216411217729}
+  - {fileID: 1972735637408890211}
+  - {fileID: 5329952871040889645}
+  - {fileID: 1077462233096902055}
 --- !u!1 &2478433025854322823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,6 +4920,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 8111610081063742708}
+  - {fileID: 605767316388724988}
+  - {fileID: 6047876646406080222}
 --- !u!1 &2508129710534663698
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,6 +5073,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3858673985987243467}
+  - {fileID: 8230999946790598784}
+  - {fileID: 3996880490314021143}
+  - {fileID: 6734159575031324628}
 --- !u!1 &2508783500411688306
 GameObject:
   m_ObjectHideFlags: 0
@@ -5092,6 +5227,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7492869072120074194}
+  - {fileID: 1136069525872551468}
+  - {fileID: 7867940818115229420}
+  - {fileID: 5268943624842712807}
 --- !u!1 &2544191874595952985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5242,6 +5382,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 8230999946790598784}
+  - {fileID: 7531170113652900002}
+  - {fileID: 6472703668852049926}
+  - {fileID: 4240370929290858988}
 --- !u!1 &2610101670980913789
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,6 +5536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7808795864764788724}
+  - {fileID: 3298318155135186402}
 --- !u!1 &2778789697696087311
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,6 +5688,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 195277495501866905}
+  - {fileID: 7943693999831138943}
+  - {fileID: 5395399637521425371}
 --- !u!1 &2798793714729850818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,6 +5841,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4393694010515916062}
+  - {fileID: 6668855050605112216}
+  - {fileID: 3462119792842173759}
+  - {fileID: 594363572485934929}
 --- !u!1 &2920126755292424268
 GameObject:
   m_ObjectHideFlags: 0
@@ -5838,6 +5995,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7808795864764788724}
+  - {fileID: 1140523998989522605}
+  - {fileID: 3298318155135186402}
+  - {fileID: 4501566123696340907}
 --- !u!1 &3021499363652528902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,6 +6149,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 274886659829838150}
+  - {fileID: 5226833313443792873}
+  - {fileID: 6472703668852049926}
+  - {fileID: 7486295586947451845}
 --- !u!1 &3029783656315701288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,6 +6303,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1077462233096902055}
+  - {fileID: 1181729247651020645}
+  - {fileID: 6750439004687905533}
+  - {fileID: 1972735637408890211}
 --- !u!1 &3105374587831046309
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,6 +6457,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1634783649300148432}
+  - {fileID: 3726970144758777149}
 --- !u!1 &3191919299024140692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,6 +6609,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 997287239371071247}
+  - {fileID: 594363572485934929}
+  - {fileID: 8489036912073511774}
+  - {fileID: 679693638000173137}
 --- !u!1 &3200625205804594688
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,6 +6763,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3462119792842173759}
+  - {fileID: 4392139185907313952}
+  - {fileID: 8487678721703007008}
+  - {fileID: 6668855050605112216}
 --- !u!1 &3247178476080809903
 GameObject:
   m_ObjectHideFlags: 0
@@ -6732,6 +6917,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5391668818475831862}
+  - {fileID: 4393694010515916062}
+  - {fileID: 4837454642596698273}
 --- !u!1 &3279393624396958767
 GameObject:
   m_ObjectHideFlags: 0
@@ -6882,6 +7071,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 1136069525872551468}
+  - {fileID: 195277495501866905}
+  - {fileID: 7448614230791132559}
+  - {fileID: 1987050053253991818}
 --- !u!1 &3298318155135186402
 GameObject:
   m_ObjectHideFlags: 0
@@ -7031,6 +7225,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2920126755292424268}
+  - {fileID: 2610101670980913789}
+  - {fileID: 7692922703441431430}
 --- !u!1 &3321205892517716703
 GameObject:
   m_ObjectHideFlags: 0
@@ -7180,6 +7378,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4392139185907313952}
+  - {fileID: 8111610081063742708}
+  - {fileID: 6047876646406080222}
+  - {fileID: 8487678721703007008}
 --- !u!1 &3385750547154743408
 GameObject:
   m_ObjectHideFlags: 0
@@ -7208,16 +7411,16 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7641712608141081226}
-  - {fileID: 884956308011833014}
   - {fileID: 5933500017294290621}
   - {fileID: 4879442423002835307}
-  - {fileID: 87072711043181326}
   - {fileID: 996248716531343773}
-  - {fileID: 5520892364369356689}
+  - {fileID: 87072711043181326}
+  - {fileID: 7641712608141081226}
   - {fileID: 3442289911485360540}
-  - {fileID: 6792271323523615279}
+  - {fileID: 5520892364369356689}
+  - {fileID: 884956308011833014}
   - {fileID: 6413343726463892794}
+  - {fileID: 6792271323523615279}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7375,6 +7578,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 1724236273864481963}
+  - {fileID: 500916484409528626}
+  - {fileID: 2798793714729850818}
+  - {fileID: 3200625205804594688}
 --- !u!1 &3620728485988968812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7403,16 +7611,16 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6907279992794558750}
-  - {fileID: 593903395916117293}
   - {fileID: 7915939422846472972}
-  - {fileID: 2855039174013615385}
-  - {fileID: 2856260372585033939}
+  - {fileID: 6907279992794558750}
   - {fileID: 265048127500074901}
-  - {fileID: 2229749125282169766}
+  - {fileID: 2856260372585033939}
   - {fileID: 3456414882857451216}
-  - {fileID: 2849172763957843518}
+  - {fileID: 2855039174013615385}
+  - {fileID: 2229749125282169766}
+  - {fileID: 593903395916117293}
   - {fileID: 3630576595160397614}
+  - {fileID: 2849172763957843518}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7657,6 +7865,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5116296493269101900}
+  - {fileID: 1141997216411217729}
+  - {fileID: 3105374587831046309}
 --- !u!1 &3858673985987243467
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,6 +8019,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 679693638000173137}
+  - {fileID: 2508129710534663698}
+  - {fileID: 997287239371071247}
+  - {fileID: 7716795329619996601}
 --- !u!1 &3996880490314021143
 GameObject:
   m_ObjectHideFlags: 0
@@ -7956,6 +8173,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 997287239371071247}
+  - {fileID: 4262074716857857816}
+  - {fileID: 2508129710534663698}
+  - {fileID: 540541805927114770}
 --- !u!1 &4240370929290858988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,6 +8327,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7686851309914773317}
+  - {fileID: 6923447411441858657}
+  - {fileID: 1987050053253991818}
+  - {fileID: 2544191874595952985}
 --- !u!1 &4262074716857857816
 GameObject:
   m_ObjectHideFlags: 0
@@ -8254,6 +8481,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 492461131137222949}
+  - {fileID: 274886659829838150}
+  - {fileID: 4837454642596698273}
+  - {fileID: 4262074716857857816}
 --- !u!1 &4392139185907313952
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,6 +8635,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 500916484409528626}
+  - {fileID: 8754457269192371520}
+  - {fileID: 3321205892517716703}
+  - {fileID: 3200625205804594688}
 --- !u!1 &4393694010515916062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8552,6 +8789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1724236273864481963}
+  - {fileID: 2798793714729850818}
+  - {fileID: 3247178476080809903}
 --- !u!1 &4433912936886262410
 GameObject:
   m_ObjectHideFlags: 0
@@ -8702,6 +8943,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 5693404365141711862}
+  - {fileID: 7867940818115229420}
+  - {fileID: 7492869072120074194}
 --- !u!1 &4501566123696340907
 GameObject:
   m_ObjectHideFlags: 0
@@ -8851,6 +9096,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7486295586947451845}
+  - {fileID: 7692922703441431430}
+  - {fileID: 2920126755292424268}
+  - {fileID: 5226833313443792873}
 --- !u!1 &4510413284837183623
 GameObject:
   m_ObjectHideFlags: 0
@@ -9176,6 +9426,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3247178476080809903}
+  - {fileID: 594363572485934929}
+  - {fileID: 5305169166165834263}
+  - {fileID: 2798793714729850818}
 --- !u!1 &4852827206343351811
 GameObject:
   m_ObjectHideFlags: 0
@@ -9325,6 +9580,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5305169166165834263}
+  - {fileID: 679693638000173137}
+  - {fileID: 594363572485934929}
+  - {fileID: 6668707696829248763}
 --- !u!1 &4881311978503303087
 GameObject:
   m_ObjectHideFlags: 0
@@ -9562,6 +9822,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5036599041399638242}
+  - {fileID: 265040789572892058}
+  - {fileID: 1731679424045599938}
 --- !u!1 &4998333494173303137
 GameObject:
   m_ObjectHideFlags: 0
@@ -9590,15 +9854,15 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 685304298266684201}
+  - {fileID: 2523402262036492752}
+  - {fileID: 5985021221075195795}
+  - {fileID: 2217349347715917294}
   - {fileID: 1380704316120561495}
   - {fileID: 1797874121639343939}
   - {fileID: 5058112442330111030}
-  - {fileID: 685304298266684201}
-  - {fileID: 2217349347715917294}
-  - {fileID: 5985021221075195795}
-  - {fileID: 2523402262036492752}
-  - {fileID: 5996790431624938527}
   - {fileID: 314753729045131696}
+  - {fileID: 5996790431624938527}
   - {fileID: 8713678634322744016}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9756,6 +10020,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6472703668852049926}
+  - {fileID: 4966743301624312444}
+  - {fileID: 7531170113652900002}
+  - {fileID: 5226833313443792873}
 --- !u!1 &5116296493269101900
 GameObject:
   m_ObjectHideFlags: 0
@@ -9905,6 +10174,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1210778219183462571}
+  - {fileID: 3726970144758777149}
+  - {fileID: 2380892875338468169}
 --- !u!1 &5226833313443792873
 GameObject:
   m_ObjectHideFlags: 0
@@ -10054,6 +10327,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3021499363652528902}
+  - {fileID: 4501566123696340907}
+  - {fileID: 265040789572892058}
+  - {fileID: 5036599041399638242}
 --- !u!1 &5268943624842712807
 GameObject:
   m_ObjectHideFlags: 0
@@ -10203,6 +10481,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1181729247651020645}
+  - {fileID: 2283667289831570284}
+  - {fileID: 6734159575031324628}
+  - {fileID: 2508783500411688306}
 --- !u!1 &5305169166165834263
 GameObject:
   m_ObjectHideFlags: 0
@@ -10353,6 +10636,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 5391668818475831862}
+  - {fileID: 4852827206343351811}
+  - {fileID: 4837454642596698273}
+  - {fileID: 6811108798166104876}
 --- !u!1 &5329952871040889645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10502,6 +10790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1634783649300148432}
+  - {fileID: 5693404365141711862}
+  - {fileID: 2428275163396806799}
 --- !u!1 &5391668818475831862
 GameObject:
   m_ObjectHideFlags: 0
@@ -10651,6 +10943,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5391668818475831862}
+  - {fileID: 3247178476080809903}
+  - {fileID: 2380892875338468169}
 --- !u!1 &5395399637521425371
 GameObject:
   m_ObjectHideFlags: 0
@@ -10800,6 +11096,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7508470275481551348}
+  - {fileID: 7110732048887286200}
+  - {fileID: 2778789697696087311}
 --- !u!1 &5544189753851598511
 GameObject:
   m_ObjectHideFlags: 0
@@ -10949,6 +11249,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5629152414069916411}
+  - {fileID: 7486295586947451845}
+  - {fileID: 274886659829838150}
+  - {fileID: 5621402543096991882}
 --- !u!1 &5621402543096991882
 GameObject:
   m_ObjectHideFlags: 0
@@ -11098,6 +11403,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6042298633860784025}
+  - {fileID: 1140523998989522605}
+  - {fileID: 7890747888864769479}
+  - {fileID: 5544189753851598511}
 --- !u!1 &5629152414069916411
 GameObject:
   m_ObjectHideFlags: 0
@@ -11247,6 +11557,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6338343038053691768}
+  - {fileID: 5544189753851598511}
+  - {fileID: 6042298633860784025}
+  - {fileID: 4262074716857857816}
 --- !u!1 &5693404365141711862
 GameObject:
   m_ObjectHideFlags: 0
@@ -11396,6 +11711,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 5329952871040889645}
+  - {fileID: 1972735637408890211}
+  - {fileID: 4433912936886262410}
 --- !u!1 &5753407828874256755
 GameObject:
   m_ObjectHideFlags: 0
@@ -11598,7 +11917,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5899151552106147965}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11665,6 +11984,7 @@ MonoBehaviour:
   isClicked: 0
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
+  prevTile: {fileID: 0}
 --- !u!1 &6042298633860784025
 GameObject:
   m_ObjectHideFlags: 0
@@ -11814,6 +12134,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6047876646406080222}
+  - {fileID: 605767316388724988}
+  - {fileID: 5621402543096991882}
+  - {fileID: 5629152414069916411}
 --- !u!1 &6047876646406080222
 GameObject:
   m_ObjectHideFlags: 0
@@ -11963,6 +12288,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3321205892517716703}
+  - {fileID: 6042298633860784025}
+  - {fileID: 2478433025854322823}
+  - {fileID: 6338343038053691768}
 --- !u!1 &6338343038053691768
 GameObject:
   m_ObjectHideFlags: 0
@@ -12112,6 +12442,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 8487678721703007008}
+  - {fileID: 5629152414069916411}
+  - {fileID: 6047876646406080222}
+  - {fileID: 492461131137222949}
 --- !u!1 &6357347706706350430
 GameObject:
   m_ObjectHideFlags: 0
@@ -12350,6 +12685,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 2544191874595952985}
+  - {fileID: 540541805927114770}
+  - {fileID: 3021499363652528902}
+  - {fileID: 5036599041399638242}
 --- !u!1 &6476559335310312193
 GameObject:
   m_ObjectHideFlags: 0
@@ -12476,14 +12816,14 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 254894464365065604}
   - {fileID: 5364446263999376977}
-  - {fileID: 1157317209612012623}
-  - {fileID: 2940166029053035688}
-  - {fileID: 1615525354694074678}
+  - {fileID: 254894464365065604}
   - {fileID: 3201497968338792676}
-  - {fileID: 292028134397324125}
+  - {fileID: 2940166029053035688}
   - {fileID: 2296967763191779909}
+  - {fileID: 1157317209612012623}
+  - {fileID: 292028134397324125}
+  - {fileID: 1615525354694074678}
   - {fileID: 1422531309479679950}
   - {fileID: 1096315506074058608}
   m_Father: {fileID: 7076153984397243179}
@@ -12643,6 +12983,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 6811108798166104876}
+  - {fileID: 6750439004687905533}
+  - {fileID: 4852827206343351811}
+  - {fileID: 1077462233096902055}
 --- !u!1 &6668855050605112216
 GameObject:
   m_ObjectHideFlags: 0
@@ -12793,6 +13138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 2798793714729850818}
+  - {fileID: 8489036912073511774}
+  - {fileID: 3200625205804594688}
+  - {fileID: 3191919299024140692}
 --- !u!1 &6734159575031324628
 GameObject:
   m_ObjectHideFlags: 0
@@ -12942,6 +13292,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7716795329619996601}
+  - {fileID: 7686851309914773317}
+  - {fileID: 2508129710534663698}
+  - {fileID: 5268943624842712807}
 --- !u!1 &6750439004687905533
 GameObject:
   m_ObjectHideFlags: 0
@@ -13092,6 +13447,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 6668707696829248763}
+  - {fileID: 7716795329619996601}
+  - {fileID: 3029783656315701288}
+  - {fileID: 679693638000173137}
 --- !u!1 &6811108798166104876
 GameObject:
   m_ObjectHideFlags: 0
@@ -13241,6 +13601,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2380892875338468169}
+  - {fileID: 6668707696829248763}
+  - {fileID: 5305169166165834263}
+  - {fileID: 1210778219183462571}
 --- !u!1 &6923447411441858657
 GameObject:
   m_ObjectHideFlags: 0
@@ -13390,6 +13755,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4240370929290858988}
+  - {fileID: 7110732048887286200}
+  - {fileID: 7508470275481551348}
+  - {fileID: 7531170113652900002}
 --- !u!1 &7010827941068342900
 GameObject:
   m_ObjectHideFlags: 0
@@ -13418,14 +13788,14 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4638547084234704567}
   - {fileID: 1059907734149807302}
-  - {fileID: 5275827632490738691}
-  - {fileID: 1836523097664770956}
-  - {fileID: 6885076277282883160}
+  - {fileID: 4638547084234704567}
   - {fileID: 6455745268125476210}
-  - {fileID: 9027202249009271080}
+  - {fileID: 1836523097664770956}
   - {fileID: 3352784658442198147}
+  - {fileID: 5275827632490738691}
+  - {fileID: 9027202249009271080}
+  - {fileID: 6885076277282883160}
   - {fileID: 2683983750312849210}
   - {fileID: 508282621660052628}
   m_Father: {fileID: 7076153984397243179}
@@ -13463,16 +13833,16 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6120821297247281925}
-  - {fileID: 7446161415597087463}
-  - {fileID: 6858679755471326382}
-  - {fileID: 3341548070800423099}
   - {fileID: 3665778961836675766}
-  - {fileID: 8065980553160813661}
+  - {fileID: 7446161415597087463}
   - {fileID: 7465134663455106639}
+  - {fileID: 8065980553160813661}
+  - {fileID: 6120821297247281925}
   - {fileID: 3212267946014021657}
-  - {fileID: 5636069117004713408}
+  - {fileID: 3341548070800423099}
+  - {fileID: 6858679755471326382}
   - {fileID: 6588303515664827461}
+  - {fileID: 5636069117004713408}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -13629,6 +13999,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6923447411441858657}
+  - {fileID: 1731679424045599938}
+  - {fileID: 5395399637521425371}
 --- !u!1 &7327800231837404675
 GameObject:
   m_ObjectHideFlags: 0
@@ -13657,15 +14031,15 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3204271528176733784}
-  - {fileID: 7919888701747526499}
-  - {fileID: 1310472588842619614}
   - {fileID: 2558956061485014609}
-  - {fileID: 7882252833791988491}
-  - {fileID: 6010173753080996969}
   - {fileID: 1238743061442782100}
-  - {fileID: 8221247176140266614}
+  - {fileID: 6010173753080996969}
+  - {fileID: 7882252833791988491}
+  - {fileID: 3204271528176733784}
   - {fileID: 94743335653318689}
+  - {fileID: 1310472588842619614}
+  - {fileID: 7919888701747526499}
+  - {fileID: 8221247176140266614}
   - {fileID: 197327279642566265}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13823,6 +14197,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7890747888864769479}
+  - {fileID: 2610101670980913789}
+  - {fileID: 1140523998989522605}
 --- !u!1 &7448614230791132559
 GameObject:
   m_ObjectHideFlags: 0
@@ -13972,6 +14350,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 874471786510661299}
+  - {fileID: 7722995644038249349}
+  - {fileID: 3279393624396958767}
 --- !u!1 &7486295586947451845
 GameObject:
   m_ObjectHideFlags: 0
@@ -14122,6 +14504,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 5544189753851598511}
+  - {fileID: 4501566123696340907}
+  - {fileID: 1140523998989522605}
+  - {fileID: 3021499363652528902}
 --- !u!1 &7492869072120074194
 GameObject:
   m_ObjectHideFlags: 0
@@ -14272,6 +14659,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 1972735637408890211}
+  - {fileID: 2508783500411688306}
+  - {fileID: 4433912936886262410}
+  - {fileID: 1181729247651020645}
 --- !u!1 &7508470275481551348
 GameObject:
   m_ObjectHideFlags: 0
@@ -14421,6 +14813,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 1987050053253991818}
+  - {fileID: 5395399637521425371}
+  - {fileID: 195277495501866905}
+  - {fileID: 6923447411441858657}
 --- !u!1 &7531170113652900002
 GameObject:
   m_ObjectHideFlags: 0
@@ -14570,6 +14967,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 2544191874595952985}
+  - {fileID: 1731679424045599938}
+  - {fileID: 5036599041399638242}
+  - {fileID: 6923447411441858657}
 --- !u!1 &7600593012855253593
 GameObject:
   m_ObjectHideFlags: 0
@@ -14598,16 +15000,16 @@ RectTransform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4599254986324324100}
-  - {fileID: 8879231054511456629}
-  - {fileID: 957675545588329597}
   - {fileID: 6774852025409288393}
   - {fileID: 1525113526220848860}
+  - {fileID: 4599254986324324100}
+  - {fileID: 8879231054511456629}
   - {fileID: 3234143416875712155}
   - {fileID: 6750210335853984167}
-  - {fileID: 7726174351808916420}
-  - {fileID: 174300364308530358}
+  - {fileID: 957675545588329597}
   - {fileID: 930524987129310678}
+  - {fileID: 174300364308530358}
+  - {fileID: 7726174351808916420}
   m_Father: {fileID: 7076153984397243179}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -14765,6 +15167,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 6734159575031324628}
+  - {fileID: 4240370929290858988}
+  - {fileID: 8230999946790598784}
+  - {fileID: 2283667289831570284}
 --- !u!1 &7692922703441431430
 GameObject:
   m_ObjectHideFlags: 0
@@ -14914,6 +15321,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 4501566123696340907}
+  - {fileID: 3298318155135186402}
+  - {fileID: 265040789572892058}
 --- !u!1 &7716795329619996601
 GameObject:
   m_ObjectHideFlags: 0
@@ -15063,6 +15474,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6750439004687905533}
+  - {fileID: 6734159575031324628}
+  - {fileID: 3858673985987243467}
+  - {fileID: 1181729247651020645}
 --- !u!1 &7722995644038249349
 GameObject:
   m_ObjectHideFlags: 0
@@ -15212,6 +15628,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 195277495501866905}
+  - {fileID: 7448614230791132559}
+  - {fileID: 7943693999831138943}
 --- !u!1 &7748319081460025360
 GameObject:
   m_ObjectHideFlags: 0
@@ -15625,6 +16045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7401432234624104519}
+  - {fileID: 2610101670980913789}
+  - {fileID: 2920126755292424268}
 --- !u!1 &7867940818115229420
 GameObject:
   m_ObjectHideFlags: 0
@@ -15775,6 +16199,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 4433912936886262410}
+  - {fileID: 874471786510661299}
+  - {fileID: 2508783500411688306}
 --- !u!1 &7890747888864769479
 GameObject:
   m_ObjectHideFlags: 0
@@ -15924,6 +16352,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 605767316388724988}
+  - {fileID: 7401432234624104519}
+  - {fileID: 5621402543096991882}
 --- !u!1 &7943693999831138943
 GameObject:
   m_ObjectHideFlags: 0
@@ -16073,6 +16505,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 7722995644038249349}
+  - {fileID: 2778789697696087311}
 --- !u!1 &7987026276970645576
 GameObject:
   m_ObjectHideFlags: 0
@@ -16310,6 +16745,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 8754457269192371520}
+  - {fileID: 2478433025854322823}
+  - {fileID: 3321205892517716703}
 --- !u!1 &8230999946790598784
 GameObject:
   m_ObjectHideFlags: 0
@@ -16460,6 +16899,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 2508129710534663698}
+  - {fileID: 2544191874595952985}
+  - {fileID: 540541805927114770}
+  - {fileID: 7686851309914773317}
 --- !u!1 &8439587679278424375
 GameObject:
   m_ObjectHideFlags: 0
@@ -16785,6 +17229,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 3200625205804594688}
+  - {fileID: 6338343038053691768}
+  - {fileID: 3321205892517716703}
+  - {fileID: 8489036912073511774}
 --- !u!1 &8489036912073511774
 GameObject:
   m_ObjectHideFlags: 0
@@ -16934,6 +17383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 6668855050605112216}
+  - {fileID: 492461131137222949}
+  - {fileID: 8487678721703007008}
+  - {fileID: 3996880490314021143}
 --- !u!1 &8652600316458022125
 GameObject:
   m_ObjectHideFlags: 0
@@ -17084,6 +17538,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 1
+  adjacentTiles:
+  - {fileID: 669685515655812124}
+  - {fileID: 2039493287367168838}
 --- !u!1 &8754457269192371520
 GameObject:
   m_ObjectHideFlags: 0
@@ -17233,6 +17690,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotsManager: {fileID: 547981341673329520}
   isHeadTile: 0
+  adjacentTiles:
+  - {fileID: 669685515655812124}
+  - {fileID: 8111610081063742708}
+  - {fileID: 4392139185907313952}
 --- !u!1 &9138989634479390567
 GameObject:
   m_ObjectHideFlags: 0
