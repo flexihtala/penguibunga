@@ -43,3 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Walls
+    uniqueID: 3797201663
+    locked: 0
+  - name: Inventory
+    uniqueID: 344254723
+    locked: 0
