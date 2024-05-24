@@ -15,6 +15,8 @@ public class DotsManager : MonoBehaviour
 
     public readonly List<SpriteRenderer> CurrentTiles = new();
 
+    private readonly List<SpriteRenderer> CompletedTiles = new();
+
     public readonly HashSet<Color> CompletedColors = new();
     
     public GameObject prevTile;
@@ -35,13 +37,27 @@ public class DotsManager : MonoBehaviour
             isClicked = false;
             foreach (var tile in UncompletedTiles)
                 tile.color = defaultColor;
+            CompletedTiles.AddRange(CurrentTiles);
             CurrentTiles.Clear();
             isStarted = false;
         }
 
-        if (CompletedColors.Count >= 9 && UncompletedTiles.Count == 0)
+        if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
+            Debug.Log("WIN");
             GameState.IsOverGameWires = true;
         }
+        
+        if (Input.GetKeyDown(KeyCode.Backspace))
+            EraseField();
+    }
+    private void EraseField()
+    {
+        foreach (var tile in CompletedTiles)
+        {
+            UncompletedTiles.Add(tile);
+            tile.color = defaultColor;
+        }
+        CompletedTiles.Clear();;
     }
 }

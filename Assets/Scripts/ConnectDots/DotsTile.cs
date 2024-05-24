@@ -32,7 +32,7 @@ public class DotsTile : MonoBehaviour
                 dotsManager.isStarted = true;
             }
         }
-        if (dotsManager.isStarted && sprite.color == dotsManager.defaultColor && !dotsManager.CompletedColors.Contains(sprite.color)
+        if (dotsManager.isClicked && sprite.color == dotsManager.defaultColor && !dotsManager.CompletedColors.Contains(sprite.color)
             && adjacentTiles.Contains(dotsManager.prevTile))
         {
             if (isHeadTile && dotsManager.currentColor != endColor)
@@ -42,13 +42,16 @@ public class DotsTile : MonoBehaviour
             dotsManager.CurrentTiles.Add(sprite);
             Debug.Log(sprite.transform.position);
             Debug.Log(dotsManager.CurrentTiles[^2].transform.position);
-            if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor.CompareRGB(dotsManager.currentColor))
+            if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor == dotsManager.currentColor)
             {
                 foreach (var tile in dotsManager.CurrentTiles)
                 {
                     dotsManager.UncompletedTiles.Remove(tile);
                 }
-                dotsManager.CompletedColors.Add(sprite.color);
+
+                dotsManager.CompletedColors.Add(endColor);
+                dotsManager.isClicked = false;
+                return;
             }
         }
         if (dotsManager.CurrentTiles.Count > 1 && sprite == dotsManager.CurrentTiles[^2])
@@ -57,6 +60,5 @@ public class DotsTile : MonoBehaviour
             dotsManager.CurrentTiles[^1].color = dotsManager.defaultColor;
             dotsManager.CurrentTiles.RemoveAt(dotsManager.CurrentTiles.Count - 1);
         }
-        
     }
 }
