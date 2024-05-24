@@ -17,13 +17,14 @@ public class PinterSpecifics : MonoBehaviour
     public bool freezePlayer;
     public bool instantText;
     private bool isTriggered;
+    public bool multipleText;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
         var penguinName = other.gameObject.GetComponent<Player>().penguinName;
-        if (!isTriggered
+        if ((!isTriggered || multipleText)
             && ((penguinName == PenguinNames.Cago && forCago)
                 || (penguinName == PenguinNames.Kawazaki && forKavazaki)
                 || (penguinName == PenguinNames.Krico && forKrico)

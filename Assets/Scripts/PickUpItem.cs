@@ -24,6 +24,13 @@ public class PickUpItem : MonoBehaviour
             Inventory.Add(item);
             if (item.itemName == ItemName.Screwdriver)
                 GameState.ChecksBool.Remove(DialogFlagEnum.Ventilation);
+            if (item.itemName == ItemName.Crowbar)
+            {
+                if (GameState.ChecksBool.Contains(DialogFlagEnum.Keyboard))
+                    GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
+                else
+                    GameState.ChecksBool.Add(DialogFlagEnum.Crowbar);
+            }
         }
     }
 

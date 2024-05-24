@@ -29,7 +29,13 @@ public class TextPuzzle : MonoBehaviour
     void Update()
     {
         if (text.text == answer)
+        {
             GameState.IsOverGameKeyboard = true;
+            if (GameState.ChecksBool.Contains(DialogFlagEnum.Crowbar))
+                GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
+            else
+                GameState.ChecksBool.Add(DialogFlagEnum.Keyboard);
+        }
         if (Input.GetKeyDown(KeyCode.Backspace) && text.text.Length > 0)
         {
             text.text = "";
