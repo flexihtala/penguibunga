@@ -11,7 +11,7 @@ public class DoorPassage : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
-                || (GameState.IsOverGameKeyboard && doorType == Door.ToiletDoor)
+                || (GameState.IsOverGameKeyboard && GameState.HaveCrowbar && doorType == Door.ToiletDoor)
                 || (GameState.HaveCrowbar && doorType == Door.Ventilation))
             {
                 var vector3 = player.transform.position;
