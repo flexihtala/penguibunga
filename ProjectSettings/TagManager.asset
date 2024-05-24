@@ -49,6 +49,6 @@ TagManager:
   - name: Walls
     uniqueID: 3797201663
     locked: 0
-  - name: Inventory
+  - name: Game and Inventory
     uniqueID: 344254723
     locked: 0
