@@ -6,7 +6,7 @@ public class PlayerTrigger : MonoBehaviour
     public bool isGrounded;
     public Player otherPlayer;
     public bool isOnMovingPlatform;
-    private MovingPlatform movingPlatform;
+    private MovingObject movingPlatform;
 
     private GameObject otherObject;
 
@@ -27,7 +27,7 @@ public class PlayerTrigger : MonoBehaviour
         if (isOnMovingPlatform)
         {
             var vector2 = playerRigidbody.position;
-            vector2.x += movingPlatform.deltaX;
+            vector2.x += movingPlatform.DeltaX;
             playerRigidbody.position = vector2;
         }
     }
@@ -44,7 +44,7 @@ public class PlayerTrigger : MonoBehaviour
         }
         if (other.CompareTag("MovingPlatform"))
         {
-            movingPlatform = otherObject.GetComponent<MovingPlatform>();
+            movingPlatform = otherObject.GetComponent<MovingObject>();
             isOnMovingPlatform = true;
         }
         if (other.CompareTag("Ground") || other.CompareTag("MovingPlatform"))
