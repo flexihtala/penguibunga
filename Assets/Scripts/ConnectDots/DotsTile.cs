@@ -49,8 +49,8 @@ public class DotsTile : MonoBehaviour
                     dotsManager.UncompletedTiles.Remove(tile);
                 }
 
+                dotsManager.CompletedColors.Add(endColor);
                 dotsManager.isClicked = false;
-                dotsManager.CompletedColors.Add(sprite.color);
                 return;
             }
         }
@@ -60,6 +60,5 @@ public class DotsTile : MonoBehaviour
             dotsManager.CurrentTiles[^1].color = dotsManager.defaultColor;
             dotsManager.CurrentTiles.RemoveAt(dotsManager.CurrentTiles.Count - 1);
         }
-        
     }
 }
