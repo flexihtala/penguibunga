@@ -17,7 +17,7 @@ public class ElectricalPanel : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        if (other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Kawazaki)
+        if (other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Estriper)
             isTriggered = true;
     }
 

@@ -10,6 +10,7 @@ public class DoorPassage : MonoBehaviour
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
+        {
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
                 || (GameState.IsOverGameKeyboard && GameState.HaveCrowbar && doorType == Door.ToiletDoor)
                 || (GameState.HaveCrowbar && doorType == Door.Ventilation))
@@ -20,6 +21,11 @@ public class DoorPassage : MonoBehaviour
                 vector3.y = position.y;
                 player.gameObject.transform.position = vector3;
             }
+            else
+            {
+                GameState.ChecksBool.Add(DialogFlagEnum.RoomDoorClosed);
+            }
+        }
     }
 
 

@@ -44,8 +44,8 @@ public class DotsManager : MonoBehaviour
 
         if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
-            Debug.Log("WIN");
             GameState.IsOverGameWires = true;
+            GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
         }
         
         if (Input.GetKeyDown(KeyCode.Backspace))

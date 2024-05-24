@@ -1,5 +1,7 @@
 public enum DialogFlagEnum
 {
     None,
-    Ventilation
+    Ventilation,
+    RoomDoor,
+    RoomDoorClosed
 }
