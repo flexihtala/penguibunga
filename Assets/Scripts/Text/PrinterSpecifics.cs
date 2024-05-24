@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -7,16 +8,18 @@ public class PinterSpecifics : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textFrame;
     [SerializeField] private string text;
-    [SerializeField] private float waitingTimeInterval = 0.1f;
+    [SerializeField] private float waitingTimeInterval = 0.065f;
     [SerializeField] private GameObject panel;
     private bool isTriggered;
+    public float waitingTime = 99999f;
     public bool forKavazaki;
     public bool forKrico;
     public bool forEstriper;
     public bool forCago;
     public DialogFlagEnum FlagName;
+    private int pressCount;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
@@ -29,7 +32,6 @@ public class PinterSpecifics : MonoBehaviour
             && GameState.ChecksBool.TryGetValue(FlagName, out _)
             && !GameState.IsNowTextDisplayed)
         {
-            
             textFrame.text = string.Empty;
             isTriggered = true;
             StartCoroutine(TypeLine());
@@ -38,17 +40,33 @@ public class PinterSpecifics : MonoBehaviour
     
     private IEnumerator TypeLine()
     {
+        GameState.ActivePlayer.isActive = false;
         GameState.IsNowTextDisplayed = true;
         panel.SetActive(true);
         foreach (var el in text)
         {
             textFrame.text += el;
+            if (pressCount == 1)
+                waitingTimeInterval = 0f;
             yield return new WaitForSeconds(waitingTimeInterval);
         }
+        if (pressCount >= 2)
+        {
+            textFrame.text = string.Empty;
+            panel.SetActive(false);
+            GameState.ActivePlayer.isActive = true;
+            GameState.IsNowTextDisplayed = false;
+            waitingTimeInterval = 0.065f;
+            pressCount = 0;
+        }
+    }
 
-        yield return new WaitForSeconds(2);
-        textFrame.text = string.Empty;
-        panel.SetActive(false);
-        GameState.IsNowTextDisplayed = false;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            pressCount++;
+            Debug.Log(pressCount);
+        }
     }
 }

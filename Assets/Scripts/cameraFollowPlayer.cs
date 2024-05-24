@@ -19,7 +19,10 @@ public class CameraFollowPlayer : MonoBehaviour
     void Update()
     {
         var temp = transform.position;
-        var position = players.First(player => player.isActive).transform.position;
+        var player = players.FirstOrDefault(player => player.isActive);
+        if (player is null)
+            return;
+        var position = player.transform.position;
         temp.x = position.x;
         temp.y = position.y;
         transform.position = temp;

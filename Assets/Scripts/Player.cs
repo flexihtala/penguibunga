@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (isActive)
+            GameState.ActivePlayer = this;
         if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             playerTrigger.gameObject.SetActive(false);

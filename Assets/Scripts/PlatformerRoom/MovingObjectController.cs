@@ -50,14 +50,20 @@ public class MovingObject : MonoBehaviour
         if (movingUp)
         {
             if (position.y > upEdge)
-                transform.position = position.ChangeByY(-Speed * Time.deltaTime);
+            {
+                float y = -Speed * Time.deltaTime;
+                transform.position = position + new Vector3(0, y, 0);
+            }
             else
                 movingUp = false;
         }
         else
         {
             if (position.y < downEdge)
-                transform.position = position.ChangeByY(Speed * Time.deltaTime);
+            {
+                float y = Speed * Time.deltaTime;
+                transform.position = position + new Vector3(0, y, 0);
+            }
             else
                 movingUp = true;
         }
@@ -71,7 +77,10 @@ public class MovingObject : MonoBehaviour
         {
             DeltaX = -Speed * Time.deltaTime;
             if (position.x > leftEdge)
-                transform.position = position.ChangeByX(-Speed * Time.deltaTime);
+            {
+                float x = -Speed * Time.deltaTime;
+                transform.position = position + new Vector3(x, 0, 0);
+            }
             else
                 movingLeft = false;
         }
@@ -79,7 +88,10 @@ public class MovingObject : MonoBehaviour
         {
             DeltaX = Speed * Time.deltaTime;
             if (position.x < rightEdge)
-                transform.position = position.ChangeByX(Speed * Time.deltaTime);
+            {
+                float x = Speed * Time.deltaTime;
+                transform.position = position + new Vector3(x, 0, 0);
+            }
             else
                 movingLeft = true;
         }

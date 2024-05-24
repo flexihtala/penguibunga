@@ -22,6 +22,8 @@ public class PickUpItem : MonoBehaviour
             Debug.Log("item was picked up");
             Destroy(gameObject);
             Inventory.Add(item);
+            if (item.itemName == ItemName.Screwdriver)
+                GameState.ChecksBool.Remove(DialogFlagEnum.Ventilation);
         }
     }
 
