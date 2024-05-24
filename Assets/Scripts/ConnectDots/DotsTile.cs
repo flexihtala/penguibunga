@@ -42,11 +42,7 @@ public class DotsTile : MonoBehaviour
             dotsManager.CurrentTiles.Add(sprite);
             Debug.Log(sprite.transform.position);
             Debug.Log(dotsManager.CurrentTiles[^2].transform.position);
-<<<<<<< Updated upstream
-            if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor.CompareRGB(dotsManager.currentColor))
-=======
             if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor == dotsManager.currentColor)
->>>>>>> Stashed changes
             {
                 foreach (var tile in dotsManager.CurrentTiles)
                 {
