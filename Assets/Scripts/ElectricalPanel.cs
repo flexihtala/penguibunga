@@ -20,6 +20,8 @@ public class ElectricalPanel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // review(24.05.2024): if (!other.CompareTag("Player")) return;
+        // review(24.05.2024): А еще можно просто отнаследовать PlayerTrigger : BoxCollider и в нем реализовать одну и ту же проверку на игрока 
         if (other.CompareTag("Player") && other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Kawazaki)
             isTriggered = true;
         else if (isStupid && other.CompareTag("Player"))
@@ -39,6 +41,7 @@ public class ElectricalPanel : MonoBehaviour
         }
     }
 
+    // review(24.05.2024): Код дублируется. Стоит выделить класс, который занимается печатью текста
     private IEnumerator TypeLine()
     {
         panel.SetActive(true);
