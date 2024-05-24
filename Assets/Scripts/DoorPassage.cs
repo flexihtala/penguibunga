@@ -1,12 +1,5 @@
 using UnityEngine;
 
-public enum Door
-{
-    RoomDoor,
-    ToiletDoor,
-    Ventilation
-}
-
 public class DoorPassage : MonoBehaviour
 {
     public Door doorType;
@@ -17,7 +10,6 @@ public class DoorPassage : MonoBehaviour
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
-        {
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
                 || (GameState.IsOverGameKeyboard && doorType == Door.ToiletDoor)
                 || (GameState.HaveCrowbar && doorType == Door.Ventilation))
@@ -28,7 +20,6 @@ public class DoorPassage : MonoBehaviour
                 vector3.y = position.y;
                 player.gameObject.transform.position = vector3;
             }
-        }
     }
 
 
