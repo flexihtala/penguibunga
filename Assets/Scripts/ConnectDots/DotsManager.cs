@@ -13,7 +13,7 @@ public class DotsManager : MonoBehaviour
 
     public readonly HashSet<SpriteRenderer> UncompletedTiles = new();
 
-    public readonly HashSet<SpriteRenderer> CurrentTiles = new();
+    public readonly List<SpriteRenderer> CurrentTiles = new();
 
     public readonly HashSet<Color> CompletedColors = new();
     

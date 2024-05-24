@@ -27,6 +27,7 @@ public class DotsTile : MonoBehaviour
             if (dotsManager.isClicked)
             {
                 sprite.color = dotsManager.currentColor;
+                dotsManager.CurrentTiles.Add(sprite);
                 dotsManager.prevTile = gameObject;
                 dotsManager.isStarted = true;
             }
@@ -39,13 +40,10 @@ public class DotsTile : MonoBehaviour
             sprite.color = dotsManager.currentColor;
             dotsManager.prevTile = gameObject;
             dotsManager.CurrentTiles.Add(sprite);
-            Debug.Log(endColor);
-            Debug.Log(dotsManager.currentColor);
-            Debug.Log(isHeadTile);
+            Debug.Log(sprite.transform.position);
+            Debug.Log(dotsManager.CurrentTiles[^2].transform.position);
             if (isHeadTile && dotsManager.CurrentTiles.Count > 1 && endColor.CompareRGB(dotsManager.currentColor))
             {
-                Debug.Log(endColor);
-                Debug.Log(dotsManager.currentColor);
                 foreach (var tile in dotsManager.CurrentTiles)
                 {
                     dotsManager.UncompletedTiles.Remove(tile);
@@ -53,5 +51,12 @@ public class DotsTile : MonoBehaviour
                 dotsManager.CompletedColors.Add(sprite.color);
             }
         }
+        if (dotsManager.CurrentTiles.Count > 1 && sprite == dotsManager.CurrentTiles[^2])
+        {
+            dotsManager.prevTile = dotsManager.CurrentTiles[^2].gameObject;
+            dotsManager.CurrentTiles[^1].color = dotsManager.defaultColor;
+            dotsManager.CurrentTiles.RemoveAt(dotsManager.CurrentTiles.Count - 1);
+        }
+        
     }
 }
