@@ -22,12 +22,14 @@ public class TextPuzzle : MonoBehaviour
 
     void Start()
     {
+        // review(24.05.2024): text ??= GetComponent<TMP_Text>();
         if (text == null)
             text = GetComponent<TMP_Text>();
     }
 
     void Update()
     {
+        // review(24.05.2024): Правильно ли я понял, что даже если TextPuzzle не активен, он все равно будет выполнять метод Update?
         if (text.text == answer)
             GameState.IsOverGameKeyboard = true;
         if (Input.GetKeyDown(KeyCode.Backspace) && text.text.Length > 0)
@@ -38,9 +40,12 @@ public class TextPuzzle : MonoBehaviour
 
         if (text.text.Length == answer.Length)
             return;
+        // review(24.05.2024): Если предполагается, что числа вводятся по одному, тогда зачем тут foreach?
+        // Можно же через FirstOrDefault() найти нужную кнопку и с ней работать
         foreach (var el in Alphabet)
         {
-            if (!Input.GetKeyDown(el)) continue;
+            if (!Input.GetKeyDown(el)) continue; // review(24.05.2024): На новую строку
+            // review(24.05.2024): Я бы выделил класс-хелпер, который бы умел KeyCodes.GetDigit(KeyCode key): KeyCode -> int и скрыл бы там всю эту сложность
             var nexIndex = (Int32.Parse((el.ToString()[^1]).ToString()) + 2) % Alphabet.Count;
             var newDigit = Alphabet[nexIndex].ToString()[^1];
             if (text.text.Length != 0)

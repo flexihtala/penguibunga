@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+// review(24.05.2024): Название класса не соответствует названию файла
 public class ChangeImage : MonoBehaviour
 {
     [Header("Image")] [SerializeField] private Image image;

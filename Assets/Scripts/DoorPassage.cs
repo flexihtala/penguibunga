@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// review(24.05.2024): Стоит разместить в отдельном файле
 public enum Door
 {
     RoomDoor,

@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public PlayerController controller;
 
     public bool isActive;
-    private Inventory inventory;
+    private Inventory inventory; // review(24.05.2024): А зачем это поле, если класс статический?
 
     private PlayerTrigger playerTrigger;
 

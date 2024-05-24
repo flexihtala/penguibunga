@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour
         if (item.itemName == ItemName.Crowbar)
             GameState.HaveCrowbar = true;
         if (OnItemChangedCallback != null)
-            OnItemChangedCallback.Invoke ();
+            OnItemChangedCallback.Invoke (); // review(24.05.2024): null-propagation
     }
     public static void Remove (ItemName itemName)
     {
