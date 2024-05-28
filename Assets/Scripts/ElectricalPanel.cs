@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -7,6 +8,12 @@ public class ElectricalPanel : MonoBehaviour
     public DotsManager dots;
     private bool isTriggered;
     private bool showGame;
+    private InteractableObject interactableObject;
+
+    private void Start()
+    {
+        interactableObject = GetComponent<InteractableObject>();
+    }
 
     private void Update()
     {
@@ -21,8 +28,9 @@ public class ElectricalPanel : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        if (other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Estriper)
-            isTriggered = true;
+        var isEstriper = other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Estriper;
+        interactableObject.isInteractable = isEstriper;
+        isTriggered = isEstriper;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -32,6 +40,7 @@ public class ElectricalPanel : MonoBehaviour
             isTriggered = false;
             dots.isClicked = false;
             dots.gameObject.SetActive(false);
+            interactableObject.isInteractable = false;
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DoorPassage : MonoBehaviour
@@ -6,9 +7,16 @@ public class DoorPassage : MonoBehaviour
     public GameObject exitDoor;
     private bool isTriggered;
     private Player player;
+    private InteractableObject interactableObject;
+
+    private void Start()
+    {
+        interactableObject = GetComponent<InteractableObject>();
+    }
 
     private void Update()
     {
+        interactableObject.isInteractable = GameState.IsOverGameWires;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
