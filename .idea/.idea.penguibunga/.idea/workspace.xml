@@ -6,70 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Cago/Controller/Cago.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Cago/Controller/Cago.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Estriper/Controller/Estriper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Estriper/Controller/Estriper.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Kawazaki/Controller/Kawazaki.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Kawazaki/Controller/Kawazaki.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Krico/Controller/Krico.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Pinguins Animations/Krico/Controller/Krico.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Animation.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago_Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Cago_Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper_Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Estriper_Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki_Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Kawazaki_Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico_Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Krico_Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0002.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0003.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Animation/Sprite-0004.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/Key_1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/Key_1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/TextPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/TextPuzzle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +157,7 @@
       <workItem from="1716563607250" duration="5011000" />
       <workItem from="1716580843209" duration="1038000" />
       <workItem from="1716827968634" duration="446000" />
-      <workItem from="1716909117732" duration="5910000" />
+      <workItem from="1716909117732" duration="7204000" />
     </task>
     <servers />
   </component>

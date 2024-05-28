@@ -11,7 +11,7 @@ public class TextPuzzle : MonoBehaviour
     [SerializeField] private TMP_Text text;
 
     [SerializeField] private Animator[] keyAnimators;
-    private string answer = "2 3 5 8";
+    private string answer = "2 7 3 4";
 
     private static List<KeyCode> Alphabet = new()
     {
