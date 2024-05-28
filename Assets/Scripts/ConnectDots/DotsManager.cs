@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Serialization;
 
 public class DotsManager : MonoBehaviour
 {
@@ -15,12 +18,13 @@ public class DotsManager : MonoBehaviour
 
     public readonly List<SpriteRenderer> CurrentTiles = new();
 
-    private readonly List<SpriteRenderer> CompletedTiles = new();
-
     public readonly HashSet<Color> CompletedColors = new();
-    
+
     public GameObject prevTile;
 
+    [SerializeField] private GlobalLightState globalLightState;
+    
+    private readonly List<SpriteRenderer> CompletedTiles = new();
 
     // Update is called once per frame
     private void Update()
@@ -36,16 +40,17 @@ public class DotsManager : MonoBehaviour
             CurrentTiles.Clear();
             isStarted = false;
         }
-
         if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
             GameState.IsOverGameWires = true;
+            globalLightState.TurnOffLight();
             GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
         }
-        
+
         if (Input.GetKeyDown(KeyCode.Backspace))
             EraseField();
     }
+
     public void EraseField()
     {
         foreach (var tile in CompletedTiles)
@@ -53,6 +58,8 @@ public class DotsManager : MonoBehaviour
             UncompletedTiles.Add(tile);
             tile.color = defaultColor;
         }
-        CompletedTiles.Clear();;
+
+        CompletedTiles.Clear();
+        ;
     }
 }

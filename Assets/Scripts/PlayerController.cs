@@ -7,9 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     public bool isMoving;
     public float speed = 3f;
-
+    
     public float jumpForce = 20f;
     public float dashForce = 20f;
+    public bool IsGameOver;
+    
     private bool canDash = true;
     private float dashCooldown = 1f;
     private float dashTime = 0.2f;
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (isDashing)
+        if (isDashing || IsGameOver)
             return;
         
         if (Input.GetKeyDown(KeyCode.RightShift)
