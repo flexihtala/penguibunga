@@ -6,11 +6,15 @@ public class ElectricalPanel : MonoBehaviour
 {
     public DotsManager dots;
     private bool isTriggered;
+    private bool showGame;
 
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
-            dots.gameObject.SetActive(true);
+        {
+            showGame = !showGame;
+            dots.gameObject.SetActive(showGame);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

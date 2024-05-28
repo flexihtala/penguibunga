@@ -54,7 +54,7 @@ public class DotsTile : MonoBehaviour
                 return;
             }
         }
-        if (dotsManager.CurrentTiles.Count > 1 && sprite == dotsManager.CurrentTiles[^2])
+        if (dotsManager.CurrentTiles.Count > 1 && sprite == dotsManager.CurrentTiles[^2] && dotsManager.isClicked)
         {
             dotsManager.prevTile = dotsManager.CurrentTiles[^2].gameObject;
             dotsManager.CurrentTiles[^1].color = dotsManager.defaultColor;
