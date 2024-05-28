@@ -21,11 +21,6 @@ public class DotsManager : MonoBehaviour
     
     public GameObject prevTile;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        gameObject.SetActive(false);
-    }
 
     // Update is called once per frame
     private void Update()
@@ -51,7 +46,7 @@ public class DotsManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
             EraseField();
     }
-    private void EraseField()
+    public void EraseField()
     {
         foreach (var tile in CompletedTiles)
         {
