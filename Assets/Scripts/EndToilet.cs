@@ -12,6 +12,8 @@ public class EndToilet : MonoBehaviour
     [SerializeField] private Animator CagoAnimator;
     [SerializeField] private Animator EstriperAnimator;
     [SerializeField] private Animator KawazakiAnimator;
+    [SerializeField] private CanvasGroup EndCanvas;
+    private bool gameOver = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,15 +26,41 @@ public class EndToilet : MonoBehaviour
         if (other.CompareTag("Player"))
             isTriggered = false;
     }
+
     private void Update()
     {
-        if (isTriggered && Input.GetKeyDown(KeyCode.E))
-        {
+        if (gameOver)
+            return;
+
+        if (!isTriggered || !Input.GetKeyDown(KeyCode.E)) return;
+
+        gameOver = true;
+
+        GameState.ActivePlayer.isActive = false;
+        
+        if (GameState.ActivePlayer.penguinName != PenguinNames.Cago)
             CagoAnimator.SetBool("IsGameOver", true);
+
+        if (GameState.ActivePlayer.penguinName != PenguinNames.Krico)
             KricoAnimator.SetBool("IsGameOver", true);
+
+        if (GameState.ActivePlayer.penguinName != PenguinNames.Estriper)
             EstriperAnimator.SetBool("IsGameOver", true);
+
+        if (GameState.ActivePlayer.penguinName != PenguinNames.Kawazaki)
             KawazakiAnimator.SetBool("IsGameOver", true);
-            //SceneManager.LoadScene("MainMenu");
+
+        StartCoroutine(WaitTime());
+    }
+
+    private IEnumerator WaitTime()
+    {
+        while (Math.Abs(EndCanvas.alpha - 1) >= 1e-9)
+        {
+            EndCanvas.alpha += 0.005f;
+            yield return null;
         }
+        yield return new WaitForSeconds(10f);
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -16,6 +17,12 @@ public class Player : MonoBehaviour
     private void Start()
     {
         playerTrigger = transform.GetChild(0).GetComponent<PlayerTrigger>();
+    }
+
+    private void Awake()
+    {
+        if (isActive)
+            GameState.ActivePlayer = this;
     }
 
     // Update is called once per frame
