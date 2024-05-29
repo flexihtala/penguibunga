@@ -746,6 +746,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 17
   dashForce: 20
+  IsGameOver: 0
 --- !u!95 &7546486818844692770
 Animator:
   serializedVersion: 5
@@ -1088,6 +1089,7 @@ MonoBehaviour:
   speed: 3
   jumpForce: 17
   dashForce: 20
+  IsGameOver: 0
 --- !u!95 &3803460086131632486
 Animator:
   serializedVersion: 5
@@ -1179,27 +1181,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3353853581435388568, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6454343441941492280, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Size.x
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6454343441941492280, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Size.y
-      value: 0.32
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6454343441941492280, guid: ffb3b8d931b68c7429726ea6a9caa26b, type: 3}
       propertyPath: m_Sprite
