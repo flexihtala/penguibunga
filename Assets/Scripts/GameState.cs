@@ -15,4 +15,6 @@ public static class GameState
         DialogFlagEnum.Ventilation,
         DialogFlagEnum.None
     };
+
+    public static AudioClip CurrentMusic;
 }

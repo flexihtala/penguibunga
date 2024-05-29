@@ -2,21 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class MenuButton : MonoBehaviour
+public class MenuButton : MonoBehaviour, IPointerEnterHandler
 {
-    public GameObject unhighlighted;
-    public GameObject highlighted;
+    private AudioManager audioManager;
 
-    private void OnMouseOver()
+    private void Awake()
     {
-        unhighlighted.SetActive(false);
-        highlighted.SetActive(true);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
-    private void OnMouseExit()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        gameObject.SetActive(false);
-        unhighlighted.SetActive(true);
+        Debug.Log("A");
+        audioManager.PlaySFX(audioManager.click);
+        Debug.Log("B");
     }
 }
