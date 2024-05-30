@@ -45,12 +45,7 @@ public class PlayerController : MonoBehaviour
         var direction = Input.GetAxis("Horizontal");
         isMoving = Math.Abs(direction) > 0.01;
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
-        
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
-            audioManager.StartSteps();
-        if ((Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-            && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-            audioManager.StopSteps();
+       
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

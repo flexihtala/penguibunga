@@ -7,11 +7,13 @@ public class PickUpItem : MonoBehaviour
     private Item item;
 
     private GameObject player;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     private void Start()
     {
         item = GetComponent<Item>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class PickUpItem : MonoBehaviour
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("item was picked up");
+            audioManager.PlaySFX(audioManager.pickup);
             Destroy(gameObject);
             Inventory.Add(item);
             if (item.itemName == ItemName.Screwdriver)

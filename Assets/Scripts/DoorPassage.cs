@@ -8,10 +8,11 @@ public class DoorPassage : MonoBehaviour
     private bool isTriggered;
     private Player player;
     private InteractableObject interactableObject;
-
+    private AudioManager audioManager;
     private void Start()
     {
         interactableObject = GetComponent<InteractableObject>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -23,6 +24,7 @@ public class DoorPassage : MonoBehaviour
                 || (GameState.IsOverGameKeyboard && GameState.HaveCrowbar && doorType == Door.ToiletDoor)
                 || (GameState.HaveCrowbar && doorType == Door.Ventilation))
             {
+                audioManager.PlaySFX(audioManager.door);
                 var vector3 = player.transform.position;
                 var position = exitDoor.transform.position;
                 vector3.x = position.x;

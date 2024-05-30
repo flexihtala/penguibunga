@@ -10,8 +10,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource steps;
 
     public AudioClip background;
-    public AudioClip coridorBackground;
     public AudioClip click;
+    public AudioClip pickup;
+    public AudioClip door;
 
     private void Start()
     {
@@ -30,15 +31,5 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
-    }
-
-    public void StartSteps()
-    {
-        steps.Play();
-    }
-
-    public void StopSteps()
-    {
-        steps.Stop();
     }
 }
