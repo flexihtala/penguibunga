@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool IsGameOver;
     
     private bool canDash = true;
-    private float dashCooldown = 1f;
+    private float dashCooldown = 0.2f;
     private float dashTime = 0.2f;
     private bool doubleJump;
     private bool isDashing;
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         if (isDashing || IsGameOver)
             return;
         
-        if (Input.GetKeyDown(KeyCode.RightShift)
+        if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift)
             && canDash && penguinName == PenguinNames.Krico
             && !playerTrigger.isGrounded)
             StartCoroutine(Dash());
@@ -84,6 +84,7 @@ public class PlayerController : MonoBehaviour
         isDashing = true;
         var originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
+        audioManager.PlaySFX(audioManager.dash);
         rb.velocity = new Vector2(-transform.localScale.x * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = originalGravity;

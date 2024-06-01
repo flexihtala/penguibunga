@@ -37,6 +37,7 @@ public class DotsManager : MonoBehaviour
             foreach (var tile in UncompletedTiles)
                 tile.color = defaultColor;
             CompletedTiles.AddRange(CurrentTiles);
+            prevTile = null;
             CurrentTiles.Clear();
             isStarted = false;
         }

@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip click;
     public AudioClip pickup;
     public AudioClip door;
+    public AudioClip dash;
 
     private void Start()
     {

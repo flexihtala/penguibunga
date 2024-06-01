@@ -32,7 +32,9 @@ public class DotsTile : MonoBehaviour
                 dotsManager.isStarted = true;
             }
         }
-        if (dotsManager.isClicked && sprite.color == dotsManager.defaultColor && !dotsManager.CompletedColors.Contains(sprite.color)
+
+        if (dotsManager.isClicked && sprite.color == dotsManager.defaultColor &&
+            !dotsManager.CompletedColors.Contains(sprite.color)
             && adjacentTiles.Contains(dotsManager.prevTile))
         {
             if (isHeadTile && dotsManager.currentColor != endColor)
@@ -54,11 +56,14 @@ public class DotsTile : MonoBehaviour
                 return;
             }
         }
+
         if (dotsManager.CurrentTiles.Count > 1 && sprite == dotsManager.CurrentTiles[^2] && dotsManager.isClicked)
         {
             dotsManager.prevTile = dotsManager.CurrentTiles[^2].gameObject;
             dotsManager.CurrentTiles[^1].color = dotsManager.defaultColor;
             dotsManager.CurrentTiles.RemoveAt(dotsManager.CurrentTiles.Count - 1);
         }
+
     }
+
 }
