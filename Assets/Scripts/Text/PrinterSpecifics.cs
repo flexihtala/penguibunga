@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -19,12 +20,20 @@ public class PinterSpecifics : MonoBehaviour
     private bool isTriggered;
     public bool multipleText;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+        if (multipleText)
+            isTriggered = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
         var penguinName = other.gameObject.GetComponent<Player>().penguinName;
-        if ((!isTriggered || multipleText)
+        if (!isTriggered
             && ((penguinName == PenguinNames.Cago && forCago)
                 || (penguinName == PenguinNames.Kawazaki && forKavazaki)
                 || (penguinName == PenguinNames.Krico && forKrico)

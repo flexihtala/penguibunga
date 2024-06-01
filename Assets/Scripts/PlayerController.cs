@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         if (isDashing || IsGameOver)
             return;
         
-        if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift)
+        if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
             && canDash && penguinName == PenguinNames.Krico
             && !playerTrigger.isGrounded)
             StartCoroutine(Dash());

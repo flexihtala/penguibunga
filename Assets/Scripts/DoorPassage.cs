@@ -17,7 +17,12 @@ public class DoorPassage : MonoBehaviour
 
     private void Update()
     {
-        interactableObject.isInteractable = GameState.IsOverGameWires;
+        if (doorType == Door.RoomDoor)
+            interactableObject.isInteractable = GameState.IsOverGameWires;
+        if (doorType == Door.ToiletDoor)
+            interactableObject.isInteractable = GameState.IsOverGameKeyboard && GameState.HaveCrowbar;
+        if (doorType == Door.Ventilation)
+            interactableObject.isInteractable = GameState.HaveCrowbar;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
