@@ -42,7 +42,7 @@ public class TextPuzzle : MonoBehaviour
             keyAnimators[10].Play("PressKey");
         }
 
-        if (text.text.Length == answer.Length)
+        if (text.text.Length >= answer.Length)
             return;
         foreach (var el in Alphabet)
         {
