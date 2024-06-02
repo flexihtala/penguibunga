@@ -20,13 +20,13 @@ public class DoorPassage : MonoBehaviour
         if (doorType == Door.RoomDoor)
             interactableObject.isInteractable = GameState.IsOverGameWires;
         if (doorType == Door.ToiletDoor)
-            interactableObject.isInteractable = GameState.IsOverGameKeyboard && GameState.HaveCrowbar;
+            interactableObject.isInteractable = GameState.CanOpenToiletDoor;
         if (doorType == Door.Ventilation)
             interactableObject.isInteractable = GameState.HaveCrowbar;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             if ((GameState.IsOverGameWires && doorType == Door.RoomDoor)
-                || (GameState.IsOverGameKeyboard && GameState.HaveCrowbar && doorType == Door.ToiletDoor)
+                || (GameState.CanOpenToiletDoor && doorType == Door.ToiletDoor)
                 || (GameState.HaveCrowbar && doorType == Door.Ventilation))
             {
                 audioManager.PlaySFX(audioManager.door);
@@ -38,7 +38,6 @@ public class DoorPassage : MonoBehaviour
             }
             else if (doorType == Door.RoomDoor)
             {
-                Debug.Log("Получил флаг");
                 GameState.ChecksBool.Add(DialogFlagEnum.RoomDoorClosed);
             }
         }
