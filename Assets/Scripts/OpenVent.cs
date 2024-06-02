@@ -8,10 +8,12 @@ public class OpenVent : MonoBehaviour
     private bool isTriggered;
 
     private GameObject vent;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         vent = transform.parent.gameObject;
     }
 
@@ -21,7 +23,10 @@ public class OpenVent : MonoBehaviour
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             if(Inventory.PlayerInventory.ContainsKey(ItemName.Screwdriver))
+            {
+                audioManager.PlaySFX(audioManager.screwdriver);
                 Destroy(vent);
+            }
             else
                 Debug.Log("у тебя нет отвертки");
         }

@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
         var direction = Input.GetAxis("Horizontal");
         isMoving = Math.Abs(direction) > 0.01;
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
-       
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

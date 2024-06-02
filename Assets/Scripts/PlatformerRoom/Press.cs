@@ -8,9 +8,11 @@ public class PressController : Killer
     public Transform upperPoint;
 
     private bool movingDown = true;
+    private AudioSource audioSource;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(MovePress());
     }
 
@@ -27,6 +29,7 @@ public class PressController : Killer
                 }
                 yield return new WaitForSeconds(0.2f);
                 movingDown = false;
+                
             }
             else
             {
@@ -39,6 +42,7 @@ public class PressController : Killer
 
                 yield return new WaitForSeconds(1.0f);
                 movingDown = true;
+                audioSource.PlayOneShot(audioSource.clip);
             }
     }
 }

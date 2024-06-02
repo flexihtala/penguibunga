@@ -11,11 +11,13 @@ public class Player : MonoBehaviour
     private Inventory inventory;
 
     private PlayerTrigger playerTrigger;
+    private AudioManager audioManager;
 
 
     // Start is called before the first frame update
     private void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         playerTrigger = transform.GetChild(0).GetComponent<PlayerTrigger>();
     }
 
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
 
     public void Die(Player unit)
     {
+        audioManager.PlaySFX(audioManager.death);
         unit.gameObject.transform.position = GameState.PlatformerSpawn;
     }
 }
