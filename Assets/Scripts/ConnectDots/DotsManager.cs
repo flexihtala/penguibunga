@@ -23,7 +23,9 @@ public class DotsManager : MonoBehaviour
 
     public GameObject prevTile;
 
-    [SerializeField] private GlobalLightState globalLightState;
+    [SerializeField] private GameObject Light1;
+    [SerializeField] private GameObject Light2;
+
     
     private readonly List<SpriteRenderer> CompletedTiles = new();
 
@@ -56,7 +58,8 @@ public class DotsManager : MonoBehaviour
         GameState.IsOverGameWires = true;
         GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
         yield return new WaitForSeconds(1.5f);
-        globalLightState.TurnOffLight();
+        Light1.SetActive(false);
+        Light2.SetActive(false);
         gameObject.SetActive(false);
     }
     

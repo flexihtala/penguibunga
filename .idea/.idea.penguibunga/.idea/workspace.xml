@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorPassage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorPassage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Item/решетка_с_максом.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Item/решетка_с_максом.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -90,7 +84,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\flexihtala\Documents\ФИИТ\ОП\Game\penguibunga" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -159,6 +153,7 @@
       <workItem from="1717248396188" duration="5075000" />
       <workItem from="1717274980575" duration="4313000" />
       <workItem from="1717317387384" duration="2160000" />
+      <workItem from="1717336765599" duration="625000" />
     </task>
     <servers />
   </component>
