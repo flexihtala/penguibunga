@@ -18,7 +18,7 @@ public class KeyboardGame : MonoBehaviour
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             game.SetActive(true);
-
+            GameState.IsOpenKeyboardGame = true;
         }
     }
 
@@ -36,7 +36,7 @@ public class KeyboardGame : MonoBehaviour
         {
             isTriggered = false;
             game.SetActive(false);
-            GameState.IsOpenKeyboardGame = true;
+            GameState.IsOpenKeyboardGame = false;
         }
     }
 }
