@@ -21,19 +21,18 @@ public class InteractableObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isInteractable && other.CompareTag("Player") && other.GetComponent<Player>().isActive)
+        if (isInteractable && other.CompareTag("PlayerTrigger") && other.transform.parent.GetComponent<Player>().isActive)
         {
-            Debug.Log(name);
-            other.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
+            other.GetComponent<PlayerTrigger>().triggeredInteractableObjects.Add(gameObject);
             sr.material = highlightMaterial;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerTrigger"))
         {
-            other.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
+            other.GetComponent<PlayerTrigger>().triggeredInteractableObjects.Remove(gameObject);
             sr.material = defaultMaterial;
         }
     }
@@ -41,6 +40,8 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!isInteractable)
+        {
             sr.material = defaultMaterial;
+        }
     }
 }
