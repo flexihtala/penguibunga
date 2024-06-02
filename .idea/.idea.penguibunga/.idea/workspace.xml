@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/KeyboardGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/KeyboardGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +157,7 @@
       <workItem from="1717274980575" duration="4313000" />
       <workItem from="1717317387384" duration="2160000" />
       <workItem from="1717336765599" duration="4052000" />
+      <workItem from="1717348799034" duration="421000" />
     </task>
     <servers />
   </component>

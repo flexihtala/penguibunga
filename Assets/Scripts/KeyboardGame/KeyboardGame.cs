@@ -7,14 +7,17 @@ public class KeyboardGame : MonoBehaviour
 {
     public GameObject game;
     private bool isTriggered;
+    private InteractableObject interactableObject;
 
     private void Awake()
     {
         game.SetActive(false);
+        interactableObject = GetComponent<InteractableObject>();
     }
 
     private void Update()
     {
+        interactableObject.isInteractable = GameState.ActivePlayer.penguinName == PenguinNames.Kawazaki;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             game.SetActive(true);
