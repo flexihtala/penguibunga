@@ -55,7 +55,7 @@ public class DotsManager : MonoBehaviour
     {
         GameState.IsOverGameWires = true;
         GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         globalLightState.TurnOffLight();
         gameObject.SetActive(false);
     }
