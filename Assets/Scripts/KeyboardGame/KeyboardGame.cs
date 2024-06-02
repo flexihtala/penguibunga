@@ -8,6 +8,7 @@ public class KeyboardGame : MonoBehaviour
     public GameObject game;
     private bool isTriggered;
     private InteractableObject interactableObject;
+    private bool showGame;
 
     private void Awake()
     {
@@ -20,8 +21,9 @@ public class KeyboardGame : MonoBehaviour
         interactableObject.isInteractable = GameState.ActivePlayer.penguinName == PenguinNames.Kawazaki;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            game.SetActive(true);
-            GameState.IsOpenKeyboardGame = true;
+            showGame = !showGame;
+            game.SetActive(showGame);
+            GameState.IsOpenKeyboardGame = showGame;
         }
     }
 

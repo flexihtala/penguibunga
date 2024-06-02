@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (penguinName == PenguinNames.Cago)
+            Debug.Log(rb.velocity.x);
         if (isDashing || IsGameOver)
             return;
 

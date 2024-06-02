@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
             GameState.ActivePlayer = this;
     }
 
-    // Update is called once per frame
     private void Update()
     {
         if (isActive)
