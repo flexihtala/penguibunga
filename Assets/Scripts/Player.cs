@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -30,7 +31,10 @@ public class Player : MonoBehaviour
     private void Update()
     {
         if (isActive)
+        {
             GameState.ActivePlayer = this;
+        }
+
         if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.F))
         {
             playerTrigger.gameObject.SetActive(false);
