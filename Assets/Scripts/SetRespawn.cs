@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class SetRespawn : MonoBehaviour
 {
-    public GameObject gameObject;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

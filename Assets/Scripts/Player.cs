@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public PlayerController controller;
 
     public bool isActive;
-    private Inventory inventory;
 
     private PlayerTrigger playerTrigger;
     private AudioManager audioManager;

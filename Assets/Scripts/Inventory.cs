@@ -23,14 +23,11 @@ public class Inventory : MonoBehaviour
         PlayerInventory[item.itemName] = item;
         if (item.itemName == ItemName.Crowbar)
             GameState.HaveCrowbar = true;
-        if (OnItemChangedCallback != null)
-            OnItemChangedCallback.Invoke ();
+        OnItemChangedCallback?.Invoke ();
     }
     public static void Remove (ItemName itemName)
     {
         PlayerInventory.Remove(itemName);
-
-        if (OnItemChangedCallback != null)
-            OnItemChangedCallback.Invoke();
+        OnItemChangedCallback?.Invoke();
     }
 }
