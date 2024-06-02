@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -21,10 +22,8 @@ public class DotsManager : MonoBehaviour
     public readonly HashSet<Color> CompletedColors = new();
 
     public GameObject prevTile;
-    
-    [SerializeField] private GameObject lightStartRoom;
-    [SerializeField] private GameObject lightElectricalRoom;
-    
+
+    [SerializeField] private GlobalLightState globalLightState;
     
     private readonly List<SpriteRenderer> CompletedTiles = new();
 
@@ -45,16 +44,22 @@ public class DotsManager : MonoBehaviour
         }
         if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
-            GameState.IsOverGameWires = true;
-            lightStartRoom.SetActive(false);
-            lightElectricalRoom.SetActive(false);
-            GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
+            StartCoroutine(EndGame());
         }
 
         if (Input.GetKeyDown(KeyCode.Backspace))
             EraseField();
     }
 
+    private IEnumerator EndGame()
+    {
+        GameState.IsOverGameWires = true;
+        GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
+        yield return new WaitForSeconds(2f);
+        globalLightState.TurnOffLight();
+        gameObject.SetActive(false);
+    }
+    
     public void EraseField()
     {
         foreach (var tile in CompletedTiles)
