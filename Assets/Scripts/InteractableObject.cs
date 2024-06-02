@@ -24,6 +24,7 @@ public class InteractableObject : MonoBehaviour
         if (isInteractable && other.CompareTag("Player") && other.GetComponent<Player>().isActive)
         {
             Debug.Log(name);
+            other.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
             sr.material = highlightMaterial;
         }
     }
@@ -31,7 +32,10 @@ public class InteractableObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-           sr.material = defaultMaterial;
+        {
+            other.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
+            sr.material = defaultMaterial;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
