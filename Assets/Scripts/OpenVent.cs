@@ -9,26 +9,27 @@ public class OpenVent : MonoBehaviour
 
     private GameObject vent;
     private AudioManager audioManager;
+    private InteractableObject interactableObject;
 
     // Start is called before the first frame update
     void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         vent = transform.parent.gameObject;
+        interactableObject = GetComponent<InteractableObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isTriggered && Input.GetKeyDown(KeyCode.E))
+        if (Inventory.PlayerInventory.ContainsKey(ItemName.Screwdriver))
         {
-            if(Inventory.PlayerInventory.ContainsKey(ItemName.Screwdriver))
+            interactableObject.isInteractable = true;
+            if (isTriggered && Input.GetKeyDown(KeyCode.E))
             {
                 audioManager.PlaySFX(audioManager.screwdriver);
                 Destroy(vent);
             }
-            else
-                Debug.Log("у тебя нет отвертки");
         }
     }
 

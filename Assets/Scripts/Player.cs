@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     {
         if (isActive)
             GameState.ActivePlayer = this;
-        if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.E))
+        if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.F))
         {
             playerTrigger.gameObject.SetActive(false);
             isActive = false;
