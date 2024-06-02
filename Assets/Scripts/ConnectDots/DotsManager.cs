@@ -48,9 +48,6 @@ public class DotsManager : MonoBehaviour
         {
             StartCoroutine(EndGame());
         }
-
-        if (Input.GetKeyDown(KeyCode.Backspace))
-            EraseField();
     }
 
     private IEnumerator EndGame()

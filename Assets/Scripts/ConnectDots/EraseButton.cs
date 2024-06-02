@@ -6,8 +6,10 @@ using UnityEngine;
 public class EraseButton : MonoBehaviour
 {
     public DotsManager dotsManager;
-    private void OnMouseDown()
+
+    void EraseField()
     {
-        dotsManager.EraseField();
+        if (!GameState.IsOverGameWires) 
+            dotsManager.EraseField();
     }
 }
