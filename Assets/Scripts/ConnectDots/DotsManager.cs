@@ -21,8 +21,10 @@ public class DotsManager : MonoBehaviour
     public readonly HashSet<Color> CompletedColors = new();
 
     public GameObject prevTile;
-
-    [SerializeField] private GlobalLightState globalLightState;
+    
+    [SerializeField] private GameObject lightStartRoom;
+    [SerializeField] private GameObject lightElectricalRoom;
+    
     
     private readonly List<SpriteRenderer> CompletedTiles = new();
 
@@ -44,7 +46,8 @@ public class DotsManager : MonoBehaviour
         if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
             GameState.IsOverGameWires = true;
-            globalLightState.TurnOffLight();
+            lightStartRoom.SetActive(false);
+            lightElectricalRoom.SetActive(false);
             GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
         }
 

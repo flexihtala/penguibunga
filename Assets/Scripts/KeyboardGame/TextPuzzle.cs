@@ -11,6 +11,8 @@ public class TextPuzzle : MonoBehaviour
     [SerializeField] private TMP_Text text;
 
     [SerializeField] private Animator[] keyAnimators;
+    [SerializeField] private GameObject RedLamp;
+    [SerializeField] private GameObject GamePanel;
     private string answer = "2 7 3 4";
 
     private static List<KeyCode> Alphabet = new()
@@ -19,6 +21,18 @@ public class TextPuzzle : MonoBehaviour
         KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7,
         KeyCode.Alpha8, KeyCode.Alpha9
     };
+
+    private IEnumerator EndGame()
+    {
+        RedLamp.SetActive(false);
+        GameState.IsOverGameKeyboard = true;
+        if (GameState.ChecksBool.Contains(DialogFlagEnum.Crowbar))
+            GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
+        else
+            GameState.ChecksBool.Add(DialogFlagEnum.Keyboard);
+        yield return new  WaitForSeconds(1.5f);
+        GamePanel.SetActive(false);
+    }
 
     void Start()
     {
@@ -30,11 +44,7 @@ public class TextPuzzle : MonoBehaviour
     {
         if (text.text == answer)
         {
-            GameState.IsOverGameKeyboard = true;
-            if (GameState.ChecksBool.Contains(DialogFlagEnum.Crowbar))
-                GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
-            else
-                GameState.ChecksBool.Add(DialogFlagEnum.Keyboard);
+            StartCoroutine(EndGame());
         }
         if (Input.GetKeyDown(KeyCode.Backspace) && text.text.Length > 0)
         {
