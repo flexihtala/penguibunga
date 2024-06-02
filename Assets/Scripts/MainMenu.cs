@@ -6,8 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private Animator animatorLattice;
+    [SerializeField] private Animator animatorScreen;
     public void PlayGame()
     {
+        animatorLattice.SetBool("IsStartGame", true);
+        StartCoroutine(WaitTime());
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(2f);
+        animatorScreen.SetBool("IsStartGame", true);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Game");
     }
 
