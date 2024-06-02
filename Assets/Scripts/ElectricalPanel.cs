@@ -17,6 +17,7 @@ public class ElectricalPanel : MonoBehaviour
 
     private void Update()
     {
+        interactableObject.isInteractable = GameState.ActivePlayer.penguinName == PenguinNames.Estriper;
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             showGame = !showGame;
@@ -27,10 +28,8 @@ public class ElectricalPanel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
-            return;
-        var isEstriper = other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Estriper;
-        interactableObject.isInteractable = isEstriper;
-        isTriggered = isEstriper;
+            return; 
+        isTriggered = other.gameObject.GetComponent<Player>().penguinName == PenguinNames.Estriper;
     }
 
     private void OnTriggerExit2D(Collider2D other)

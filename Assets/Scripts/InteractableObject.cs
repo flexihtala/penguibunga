@@ -39,8 +39,9 @@ public class InteractableObject : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (!isInteractable)
+        if (!isInteractable && other.CompareTag("PlayerTrigger") && other.transform.parent.GetComponent<Player>().isActive)
         {
+            other.GetComponent<PlayerTrigger>().triggeredInteractableObjects.Remove(gameObject);
             sr.material = defaultMaterial;
         }
     }
