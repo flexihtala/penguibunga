@@ -7,9 +7,11 @@ public class BreakBars : MonoBehaviour
     [SerializeField] private GameObject brokenBars;
     [SerializeField] private GameObject wholeBars;
     private InteractableObject interactableObject;
+    private AudioManager audioManager;
 
     private void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         interactableObject = wholeBars.GetComponent<InteractableObject>();
     }
 
@@ -21,8 +23,10 @@ public class BreakBars : MonoBehaviour
         if (GameState.IsOverGameKeyboard
             && GameState.HaveCrowbar
             && isTriggered
-            && Input.GetKeyDown(KeyCode.E))
+            && Input.GetKeyDown(KeyCode.E)
+            && !GameState.CanOpenToiletDoor)
         {
+            audioManager.PlaySFX(audioManager.brokenBars);
             brokenBars.SetActive(true);
             wholeBars.SetActive(false);
             StartCoroutine(Wait(0.5f));
@@ -33,6 +37,7 @@ public class BreakBars : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         GameState.CanOpenToiletDoor = true;
+        GameState.ChecksBool.Add(DialogFlagEnum.BrokenBars);
     }
     
     private void OnTriggerEnter2D(Collider2D other)

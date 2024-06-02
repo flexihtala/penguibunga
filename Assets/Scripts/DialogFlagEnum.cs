@@ -6,5 +6,6 @@ public enum DialogFlagEnum
     RoomDoorClosed,
     Keyboard,
     Crowbar,
-    ToiletDoor
+    ToiletDoor,
+    BrokenBars
 }

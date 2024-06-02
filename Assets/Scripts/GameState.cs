@@ -4,8 +4,8 @@ using UnityEngine;
 public static class GameState
 {
     public static bool IsOverGameWires;
-    public static bool IsOverGameKeyboard;
-    public static bool HaveCrowbar;
+    public static bool IsOverGameKeyboard = true;
+    public static bool HaveCrowbar = true;
     public static bool IsNowTextDisplayed;
     public static bool IsOpenKeyboardGame;
     public static bool CanOpenToiletDoor;
