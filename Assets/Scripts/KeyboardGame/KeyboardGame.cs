@@ -16,7 +16,10 @@ public class KeyboardGame : MonoBehaviour
     private void Update()
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
+        {
             game.SetActive(true);
+            GameState.IsOpenKeyboardGame = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,6 +36,7 @@ public class KeyboardGame : MonoBehaviour
         {
             isTriggered = false;
             game.SetActive(false);
+            GameState.IsOverGameKeyboard = false;
         }
     }
 }

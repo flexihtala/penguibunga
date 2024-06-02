@@ -7,6 +7,7 @@ public static class GameState
     public static bool IsOverGameKeyboard;
     public static bool HaveCrowbar;
     public static bool IsNowTextDisplayed;
+    public static bool IsOpenKeyboardGame;
     public static Player ActivePlayer;
 
     public static Vector3 PlatformerSpawn = new(0 , 0, 0);

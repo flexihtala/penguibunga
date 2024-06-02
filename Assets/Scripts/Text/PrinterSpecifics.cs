@@ -26,7 +26,6 @@ public class PinterSpecifics : MonoBehaviour
     {
         if (isTriggered)
         {
-            Debug.Log("Я тут");
             var penguinName = PlayerCollider.gameObject.GetComponent<Player>().penguinName;
             if ((!isDialog || multipleText)
                 && ((penguinName == PenguinNames.Cago && forCago)
@@ -48,7 +47,6 @@ public class PinterSpecifics : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        Debug.Log("Зашел");
         PlayerCollider = other;
         isTriggered = true;
     }
@@ -57,7 +55,6 @@ public class PinterSpecifics : MonoBehaviour
     {
         if (!other.CompareTag("Player"))
             return;
-        Debug.Log("Вышел");
         isTriggered = false;
         PlayerCollider = null;
     }
