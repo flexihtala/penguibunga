@@ -9,6 +9,7 @@ public class PinterSpecifics : MonoBehaviour
     [SerializeField] private string text;
     [SerializeField] private float waitingTimeInterval = 0.065f;
     [SerializeField] private GameObject panel;
+    private bool isTriggered;
     public bool forKavazaki;
     public bool forKrico;
     public bool forEstriper;
@@ -17,34 +18,48 @@ public class PinterSpecifics : MonoBehaviour
     public float waitingTime = 2f;
     public bool freezePlayer;
     public bool instantText;
-    private bool isTriggered;
+    private bool isDialog;
     public bool multipleText;
+    private Collider2D PlayerCollider;
+
+    private void Update()
+    {
+        if (isTriggered)
+        {
+            Debug.Log("Я тут");
+            var penguinName = PlayerCollider.gameObject.GetComponent<Player>().penguinName;
+            if ((!isDialog || multipleText)
+                && ((penguinName == PenguinNames.Cago && forCago)
+                    || (penguinName == PenguinNames.Kawazaki && forKavazaki)
+                    || (penguinName == PenguinNames.Krico && forKrico)
+                    || (penguinName == PenguinNames.Estriper && forEstriper))
+                && GameState.ChecksBool.TryGetValue(FlagName, out var dialogFlag)
+                && !GameState.IsNowTextDisplayed)
+            {
+                textFrame.text = string.Empty;
+                isDialog = true;
+                StartCoroutine(TypeLine());
+                isTriggered = false;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player"))
+            return;
+        Debug.Log("Зашел");
+        PlayerCollider = other;
+        isTriggered = true;
+    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
-        if (multipleText)
-            isTriggered = false;
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (!other.CompareTag("Player"))
-            return;
-        var penguinName = other.gameObject.GetComponent<Player>().penguinName;
-        if (!isTriggered
-            && ((penguinName == PenguinNames.Cago && forCago)
-                || (penguinName == PenguinNames.Kawazaki && forKavazaki)
-                || (penguinName == PenguinNames.Krico && forKrico)
-                || (penguinName == PenguinNames.Estriper && forEstriper))
-            && GameState.ChecksBool.TryGetValue(FlagName, out _)
-            && !GameState.IsNowTextDisplayed)
-        {
-            textFrame.text = string.Empty;
-            isTriggered = true;
-            StartCoroutine(TypeLine());
-        }
+        Debug.Log("Вышел");
+        isTriggered = false;
+        PlayerCollider = null;
     }
 
     private IEnumerator TypeLine()

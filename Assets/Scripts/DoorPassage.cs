@@ -36,8 +36,9 @@ public class DoorPassage : MonoBehaviour
                 vector3.y = position.y;
                 player.gameObject.transform.position = vector3;
             }
-            else
+            else if (doorType == Door.RoomDoor)
             {
+                Debug.Log("Получил флаг");
                 GameState.ChecksBool.Add(DialogFlagEnum.RoomDoorClosed);
             }
         }
