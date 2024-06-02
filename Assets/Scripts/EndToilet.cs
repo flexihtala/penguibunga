@@ -13,6 +13,8 @@ public class EndToilet : MonoBehaviour
     [SerializeField] private Animator EstriperAnimator;
     [SerializeField] private Animator KawazakiAnimator;
     [SerializeField] private CanvasGroup EndCanvas;
+    [SerializeField] private GameObject buttonHelp;
+    [SerializeField] private GameObject inventory;
     private bool gameOver = false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,6 +37,8 @@ public class EndToilet : MonoBehaviour
         if (!isTriggered || !Input.GetKeyDown(KeyCode.E)) return;
 
         gameOver = true;
+        buttonHelp.SetActive(false);
+        inventory.SetActive(false);
 
         GameState.ActivePlayer.isActive = false;
         
