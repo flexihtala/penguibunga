@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,14 +23,20 @@ public class DotsManager : MonoBehaviour
     public readonly HashSet<Color> CompletedColors = new();
 
     public GameObject prevTile;
+    private AudioManager audioManager;
 
     [SerializeField] private GameObject Light1;
     [SerializeField] private GameObject Light2;
 
     
     private readonly List<SpriteRenderer> CompletedTiles = new();
+    private bool isCoroutineStarted;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -44,8 +51,9 @@ public class DotsManager : MonoBehaviour
             CurrentTiles.Clear();
             isStarted = false;
         }
-        if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
+        if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0 && !isCoroutineStarted)
         {
+            isCoroutineStarted = true;
             StartCoroutine(EndGame());
         }
     }
@@ -54,9 +62,10 @@ public class DotsManager : MonoBehaviour
     {
         GameState.IsOverGameWires = true;
         GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
-        yield return new WaitForSeconds(1.5f);
+        audioManager.PlaySFX(audioManager.electricity);
         Light1.SetActive(false);
         Light2.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
         gameObject.SetActive(false);
     }
     
@@ -69,6 +78,5 @@ public class DotsManager : MonoBehaviour
         }
 
         CompletedTiles.Clear();
-        ;
     }
 }

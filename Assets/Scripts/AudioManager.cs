@@ -17,6 +17,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip screwdriver;
     public AudioClip death;
     public AudioClip brokenBars;
+    public AudioClip electricity;
+    public AudioClip menuBars;
     private void Start()
     {
         musicSource.clip = background;

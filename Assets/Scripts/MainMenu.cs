@@ -8,6 +8,13 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Animator animatorLattice;
     [SerializeField] private Animator animatorScreen;
+    private AudioManager audioManager;
+
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     public void PlayGame()
     {
         animatorLattice.SetBool("IsStartGame", true);
@@ -16,6 +23,7 @@ public class MainMenu : MonoBehaviour
 
     IEnumerator WaitTime()
     {
+        audioManager.PlaySFX(audioManager.menuBars);
         yield return new WaitForSeconds(2f);
         animatorScreen.SetBool("IsStartGame", true);
         yield return new WaitForSeconds(2f);

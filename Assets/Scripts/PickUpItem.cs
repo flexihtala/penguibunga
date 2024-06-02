@@ -30,7 +30,10 @@ public class PickUpItem : MonoBehaviour
             if (item.itemName == ItemName.Crowbar)
             {
                 if (GameState.ChecksBool.Contains(DialogFlagEnum.Keyboard))
+                {
                     GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
+                    GameState.ChecksBool.Remove(DialogFlagEnum.OnlyKeyboard);
+                }
                 else
                     GameState.ChecksBool.Add(DialogFlagEnum.Crowbar);
             }

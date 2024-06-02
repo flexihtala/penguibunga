@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/The Escapists 2 Music - Precinct 17 - Roll Call.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/The Escapists 2 Music - Precinct 17 - Roll Call.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/broken bars.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/broken bars.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/death.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/death.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/door.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/door.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogFlagEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogFlagEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndToilet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/TextPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyboardGame/TextPuzzle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUpItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUpItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

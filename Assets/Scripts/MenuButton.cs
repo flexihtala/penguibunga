@@ -15,8 +15,6 @@ public class MenuButton : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("A");
         audioManager.PlaySFX(audioManager.click);
-        Debug.Log("B");
     }
 }

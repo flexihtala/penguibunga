@@ -29,6 +29,8 @@ public class TextPuzzle : MonoBehaviour
         GameState.ChecksBool.Add(DialogFlagEnum.Keyboard);
         if (GameState.ChecksBool.Contains(DialogFlagEnum.Crowbar))
             GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
+        else
+            GameState.ChecksBool.Add(DialogFlagEnum.OnlyKeyboard);
         yield return new  WaitForSeconds(1.5f);
         GamePanel.SetActive(false);
     }

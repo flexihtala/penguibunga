@@ -59,6 +59,7 @@ public class EndToilet : MonoBehaviour
 
     private IEnumerator WaitTime()
     {
+        GameState.ChecksBool.Add(DialogFlagEnum.End);
         while (Math.Abs(EndCanvas.alpha - 1) >= 1e-9)
         {
             EndCanvas.alpha += 0.005f;
