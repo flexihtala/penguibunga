@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BreakBars : MonoBehaviour
@@ -12,7 +10,7 @@ public class BreakBars : MonoBehaviour
 
     private void Start()
     {
-        interactableObject = GetComponent<InteractableObject>();
+        interactableObject = wholeBars.GetComponent<InteractableObject>();
     }
 
     void Update()
@@ -26,15 +24,15 @@ public class BreakBars : MonoBehaviour
             && Input.GetKeyDown(KeyCode.E))
         {
             brokenBars.SetActive(true);
-            StartCoroutine(Wait(0.2f));
             wholeBars.SetActive(false);
-            GameState.CanOpenToiletDoor = true;
+            StartCoroutine(Wait(0.5f));
         }
     }
     
     private IEnumerator Wait(float time)
     {
         yield return new WaitForSeconds(time);
+        GameState.CanOpenToiletDoor = true;
     }
     
     private void OnTriggerEnter2D(Collider2D other)
