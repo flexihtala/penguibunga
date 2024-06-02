@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -43,15 +44,22 @@ public class DotsManager : MonoBehaviour
         }
         if (CompletedColors.Count >= 5 && UncompletedTiles.Count == 0)
         {
-            GameState.IsOverGameWires = true;
-            globalLightState.TurnOffLight();
-            GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
+            StartCoroutine(EndGame());
         }
 
         if (Input.GetKeyDown(KeyCode.Backspace))
             EraseField();
     }
 
+    private IEnumerator EndGame()
+    {
+        GameState.IsOverGameWires = true;
+        GameState.ChecksBool.Add(DialogFlagEnum.RoomDoor);
+        yield return new WaitForSeconds(2f);
+        globalLightState.TurnOffLight();
+        gameObject.SetActive(false);
+    }
+    
     public void EraseField()
     {
         foreach (var tile in CompletedTiles)
