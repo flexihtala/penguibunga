@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     public bool isMoving;
     public float speed = 3f;
-    
+
     public float jumpForce = 20f;
     public float dashForce = 20f;
     public bool IsGameOver;
-    
+
     private bool canDash = true;
     private float dashCooldown = 0.2f;
     private float dashTime = 0.2f;
@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private PlayerTrigger playerTrigger;
     private AudioManager audioManager;
     private Rigidbody2D rb;
+
+    [SerializeField] private Canvas canvas;
 
     // Start is called before the first frame update
     private void Start()
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing || IsGameOver)
             return;
-        
+
         if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
             && canDash && penguinName == PenguinNames.Krico
             && !playerTrigger.isGrounded)
@@ -55,16 +57,18 @@ public class PlayerController : MonoBehaviour
                     doubleJump = !doubleJump;
             }
         }
+
         if (playerTrigger.isGrounded && penguinName == PenguinNames.Krico)
             doubleJump = true;
         DefineFacing();
     }
-    
+
 
     private void DefineFacing()
     {
         if (Input.GetAxisRaw("Horizontal") > 0 && !isFacingRight)
             Flip();
+
         if (Input.GetAxisRaw("Horizontal") < 0 && isFacingRight)
             Flip();
     }
@@ -72,8 +76,14 @@ public class PlayerController : MonoBehaviour
     private void Flip()
     {
         var playerScale = gameObject.transform.localScale;
+        var canvasScale = canvas.transform.localScale;
+
         playerScale.x *= -1;
+        canvasScale.x *= -1;
+
         transform.localScale = playerScale;
+        canvas.transform.localScale = canvasScale;
+
         isFacingRight = !isFacingRight;
     }
 
