@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
 
     private PlayerTrigger playerTrigger;
     private AudioManager audioManager;
-    private GameObject playerSwapHint;
 
 
     // Start is called before the first frame update
@@ -20,7 +19,6 @@ public class Player : MonoBehaviour
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         playerTrigger = transform.GetChild(0).GetComponent<PlayerTrigger>();
-        playerSwapHint = transform.GetChild(2).GetChild(2).gameObject;
     }
 
     private void Awake()
@@ -35,8 +33,6 @@ public class Player : MonoBehaviour
         if (isActive)
         {
             GameState.ActivePlayer = this;
-            if (playerTrigger.isTriggered)
-                playerSwapHint.SetActive(true);
         }
 
         if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.F))
