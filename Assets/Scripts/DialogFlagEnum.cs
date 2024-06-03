@@ -9,5 +9,7 @@ public enum DialogFlagEnum
     ToiletDoor,
     BrokenBars,
     OnlyKeyboard,
-    End
+    End,
+    Electrical,
+    KeyboardForStupid
 }

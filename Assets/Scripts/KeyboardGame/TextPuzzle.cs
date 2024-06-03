@@ -32,6 +32,7 @@ public class TextPuzzle : MonoBehaviour
         else
             GameState.ChecksBool.Add(DialogFlagEnum.OnlyKeyboard);
         yield return new  WaitForSeconds(1.5f);
+        GameState.ChecksBool.Remove(DialogFlagEnum.KeyboardForStupid);
         GamePanel.SetActive(false);
     }
 

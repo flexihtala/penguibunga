@@ -66,6 +66,7 @@ public class DotsManager : MonoBehaviour
         Light1.SetActive(false);
         Light2.SetActive(false);
         yield return new WaitForSeconds(1.5f);
+        GameState.ChecksBool.Remove(DialogFlagEnum.Electrical);
         gameObject.SetActive(false);
     }
     

@@ -15,7 +15,9 @@ public static class GameState
     public static HashSet<DialogFlagEnum> ChecksBool = new()
     {
         DialogFlagEnum.Ventilation,
-        DialogFlagEnum.None
+        DialogFlagEnum.None,
+        DialogFlagEnum.Electrical,
+        DialogFlagEnum.KeyboardForStupid
     };
 
     public static AudioClip CurrentMusic;

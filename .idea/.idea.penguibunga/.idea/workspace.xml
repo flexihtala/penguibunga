@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8694fc-c3f6-4aea-b1bf-74a083590ff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.penguibunga/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/DefaultURP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/DefaultURP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorPassage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorPassage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ConnectDots/DotsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogFlagEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogFlagEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Game_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Game_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game_Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Game_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game_Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Game_Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Game_Data/sharedassets1.assets" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
