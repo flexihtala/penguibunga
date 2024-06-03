@@ -60,7 +60,6 @@ public class DotsManager : MonoBehaviour
 
     public void SkipGame()
     {
-        Debug.Log("A");
         StartCoroutine(EndGame());
     }
     
