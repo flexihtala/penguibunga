@@ -34,6 +34,10 @@ public class DoorPassage : MonoBehaviour
                 vector3.y = position.y;
                 player.gameObject.transform.position = vector3;
             }
+            else if (doorType == Door.RoomDoor)
+            {
+                GameState.ChecksBool.Add(DialogFlagEnum.RoomDoorClosed);
+            }
         }
     }
 
