@@ -17,6 +17,8 @@ public class DoorPassage : MonoBehaviour
 
     private void Update()
     {
+        if (doorType == Door.RoomDoor && GameState.IsOverGameWires)
+            interactableObject.isInteractable = GameState.IsOverGameWires;
         if (doorType == Door.ToiletDoor)
             interactableObject.isInteractable = GameState.CanOpenToiletDoor;
         if (doorType == Door.Ventilation)
@@ -37,6 +39,7 @@ public class DoorPassage : MonoBehaviour
             else if (doorType == Door.RoomDoor)
             {
                 GameState.ChecksBool.Add(DialogFlagEnum.RoomDoorClosed);
+                interactableObject.isInteractable = false;
             }
         }
     }
