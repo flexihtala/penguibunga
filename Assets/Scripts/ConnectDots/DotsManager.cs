@@ -58,6 +58,12 @@ public class DotsManager : MonoBehaviour
         }
     }
 
+    public void SkipGame()
+    {
+        Debug.Log("A");
+        StartCoroutine(EndGame());
+    }
+    
     private IEnumerator EndGame()
     {
         GameState.IsOverGameWires = true;
