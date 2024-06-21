@@ -13,6 +13,8 @@ public class TextPuzzle : MonoBehaviour
     [SerializeField] private Animator[] keyAnimators;
     [SerializeField] private GameObject RedLamp;
     [SerializeField] private GameObject GamePanel;
+    [SerializeField] private CanvasGroup menuCanvas;
+    [SerializeField] private CanvasGroup tipsCanvas;
     private string answer = "2 7 3 4";
 
     private static List<KeyCode> Alphabet = new()
@@ -31,7 +33,7 @@ public class TextPuzzle : MonoBehaviour
             GameState.ChecksBool.Add(DialogFlagEnum.ToiletDoor);
         else
             GameState.ChecksBool.Add(DialogFlagEnum.OnlyKeyboard);
-        yield return new  WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.5f);
         GameState.ChecksBool.Remove(DialogFlagEnum.KeyboardForStupid);
         GamePanel.SetActive(false);
     }
@@ -44,10 +46,13 @@ public class TextPuzzle : MonoBehaviour
 
     void Update()
     {
+        if (Math.Abs(menuCanvas.alpha - 1f) < 1e-9 || Math.Abs(tipsCanvas.alpha - 1f) < 1e-9)
+            return;
         if (text.text == answer)
         {
             StartCoroutine(EndGame());
         }
+
         if (Input.GetKeyDown(KeyCode.Backspace) && text.text.Length > 0)
         {
             text.text = "";
@@ -64,7 +69,7 @@ public class TextPuzzle : MonoBehaviour
             if (text.text.Length != 0)
                 text.text += " ";
             text.text += newDigit;
-                
+
             keyAnimators[newDigit - '0'].Play("PressKey");
         }
     }

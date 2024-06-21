@@ -27,6 +27,8 @@ public class DotsManager : MonoBehaviour
 
     [SerializeField] private GameObject Light1;
     [SerializeField] private GameObject Light2;
+    [SerializeField] private CanvasGroup menuCanvas;
+    [SerializeField] private CanvasGroup tipsCanvas;
 
     
     private readonly List<SpriteRenderer> CompletedTiles = new();
@@ -39,6 +41,8 @@ public class DotsManager : MonoBehaviour
 
     private void Update()
     {
+        if (Math.Abs(menuCanvas.alpha - 1f) < 1e-9 || Math.Abs(tipsCanvas.alpha - 1f) < 1e-9)
+            return;
         if (Input.GetMouseButtonDown(0))
             isClicked = true;
         if (Input.GetMouseButtonUp(0))
