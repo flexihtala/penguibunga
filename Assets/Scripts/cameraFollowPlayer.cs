@@ -15,11 +15,12 @@ public class CameraFollowPlayer : MonoBehaviour
             .ToArray();
     }
 
+    // review(27.06.2024): Лишние комменты можно удалить
     // Update is called once per frame
     void Update()
     {
         var temp = transform.position;
-        var player = players.FirstOrDefault(player => player.isActive);
+        var player = players.FirstOrDefault(player => player.isActive); // review(27.06.2024): можно было использовать GameState.ActivePlayer, наверное
         if (player is null)
             return;
         var position = player.transform.position;

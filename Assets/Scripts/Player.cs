@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        // review(27.06.2024): Есть ощущение, что стоило сделать так, чтобы активный игрок и все, что с ним связано изменялось только при смене персонажа, а не на каждый update
+        // а сейчас получилось не очень эффективно
         if (isActive)
         {
             GameState.ActivePlayer = this;
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
 
         if (isActive && playerTrigger.isTriggered && Input.GetKeyDown(KeyCode.F))
         {
+            // review(27.06.2024): Методы, связанные с playerTrigger стоило инкапсулировать
             playerTrigger.gameObject.SetActive(false);
             isActive = false;
             playerTrigger.otherPlayer.isActive = true;

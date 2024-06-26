@@ -34,20 +34,25 @@ public class PlayerController : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
-    // Update is called once per frame
+    // review(27.06.2024): Я бы вообще разбил этот метод на несколько MonoBehaviour, отвечающих за Dash/Movment/Jump соответственно
     private void Update()
     {
         if (isDashing || IsGameOver)
             return;
 
+        // review(27.06.2024): HandleDash()
         if ((Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
             && canDash && penguinName == PenguinNames.Krico
             && !playerTrigger.isGrounded)
             StartCoroutine(Dash());
+
+        // review(27.06.2024): HandleMovement()
         var direction = Input.GetAxis("Horizontal");
         isMoving = Math.Abs(direction) > 0.01;
+        // review(27.06.2024): Если не isMoving, то можно не менять позицию игрока, чтобы зря лишний раз движок не дергать
         transform.position += new Vector3(direction, 0, 0) * (speed * Time.deltaTime);
 
+        // review(27.06.2024): HandleJump()
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (playerTrigger.isGrounded || doubleJump)

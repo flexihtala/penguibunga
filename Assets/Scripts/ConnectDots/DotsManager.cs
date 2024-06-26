@@ -31,7 +31,7 @@ public class DotsManager : MonoBehaviour
     [SerializeField] private CanvasGroup tipsCanvas;
 
     
-    private readonly List<SpriteRenderer> CompletedTiles = new();
+    private readonly List<SpriteRenderer> CompletedTiles = new(); // review(17.06.2024): Приватные поля с маленькой буквы
     private bool isCoroutineStarted;
 
     private void Start()

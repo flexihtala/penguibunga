@@ -18,16 +18,18 @@ public class PressController : Killer
 
     private IEnumerator MovePress()
     {
-        while (true)
+        // review(26.06.2024): Стоило хотя бы какой-нибудь флаг добавить в качестве условия, а то этот цикл ведь реально никогда не прекратится, а такая потребность обязательно возникнет
+        while (true) // review(26.06.2024): Зажали скобки, ясно
             if (movingDown)
             {
+                // review(26.06.2024): Стоило выделить transform.position в переменную
                 while (transform.position.y > lowerPoint.position.y)
                 {
                     transform.position = Vector2.MoveTowards(transform.position,
-                        new Vector2(transform.position.x, lowerPoint.position.y), moveSpeed * Time.deltaTime * 20);
+                        new Vector2(transform.position.x, lowerPoint.position.y), moveSpeed * Time.deltaTime * 20); // review(26.06.2024): магическая константа. Стоило выделить moveDownSpeed/moveUpSpeed
                     yield return null;
                 }
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.2f); // review(26.06.2024): WaitForSeconds - это класс. Соответственно, вы часто создаете один и тот же объект. Можно выделить в статическое поле 
                 movingDown = false;
                 
             }
@@ -40,7 +42,7 @@ public class PressController : Killer
                     yield return null;
                 }
 
-                yield return new WaitForSeconds(1.0f);
+                yield return new WaitForSeconds(1.0f); // review(26.06.2024): аналогично
                 movingDown = true;
                 audioSource.PlayOneShot(audioSource.clip);
             }

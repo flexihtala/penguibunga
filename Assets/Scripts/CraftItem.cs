@@ -20,7 +20,7 @@ public class CraftItem : MonoBehaviour
     void Update()
     {
         var hasBrickAndNail = Inventory.PlayerInventory.ContainsKey(ItemName.Nail) &&
-                              Inventory.PlayerInventory.ContainsKey(ItemName.Brick);
+                              Inventory.PlayerInventory.ContainsKey(ItemName.Brick); // review(27.06.2024): Уместнее было инкапсулировать логику проверки вещей в метод Inventory.Contains(...)
         if (hasBrickAndNail)
             interactableObject.isInteractable = true;
             

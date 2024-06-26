@@ -23,7 +23,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (isInteractable && other.CompareTag("PlayerTrigger") && other.transform.parent.GetComponent<Player>().isActive)
         {
-            other.GetComponent<PlayerTrigger>().triggeredInteractableObjects.Add(gameObject);
+            other.GetComponent<PlayerTrigger>().triggeredInteractableObjects.Add(gameObject); // review(27.06.2024): Не хватает инкапсуляции логики
             sr.material = highlightMaterial;
         }
     }

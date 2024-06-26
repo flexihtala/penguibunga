@@ -17,7 +17,7 @@ public class ElectricalPanel : MonoBehaviour
 
     private void Update()
     {
-        interactableObject.isInteractable = GameState.ActivePlayer.penguinName == PenguinNames.Estriper;
+        interactableObject.isInteractable = GameState.ActivePlayer.penguinName == PenguinNames.Estriper; // review(27.06.2024): CanInteract(Player player)
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             showGame = !showGame;
@@ -37,6 +37,7 @@ public class ElectricalPanel : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isTriggered = false;
+            // review(27.06.2024): Все, что связано с dots стоило выделить в метод DotsManager
             dots.isClicked = false;
             dots.gameObject.SetActive(false);
             interactableObject.isInteractable = false;
