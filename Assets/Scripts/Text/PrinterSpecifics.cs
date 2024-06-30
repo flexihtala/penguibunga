@@ -10,7 +10,7 @@ public class PinterSpecifics : MonoBehaviour
     [SerializeField] private float waitingTimeInterval = 0.065f;
     [SerializeField] private GameObject panel;
     private bool isTriggered;
-    public bool forKavazaki;
+    public bool forKavazaki; // review(26.06.2024): А что если вы решите добавить еще одного игрока? Снова forPlayer писать? Тут, кажется, имело смысл PlayerName[] supportedPlayers; поле ввести
     public bool forKrico;
     public bool forEstriper;
     public bool forCago;
@@ -20,7 +20,7 @@ public class PinterSpecifics : MonoBehaviour
     public bool instantText;
     private bool isDialog;
     public bool multipleText;
-    private Collider2D PlayerCollider;
+    private Collider2D PlayerCollider; // review(26.06.2024): вам на самом деле нужен не коллайдер, а сам игрок, поэтому я бы оставил поле Player player;
 
     private void Update()
     {
@@ -32,8 +32,8 @@ public class PinterSpecifics : MonoBehaviour
                     || (penguinName == PenguinNames.Kawazaki && forKavazaki)
                     || (penguinName == PenguinNames.Krico && forKrico)
                     || (penguinName == PenguinNames.Estriper && forEstriper))
-                && GameState.ChecksBool.TryGetValue(FlagName, out var dialogFlag)
-                && !GameState.IsNowTextDisplayed)
+                && GameState.ChecksBool.TryGetValue(FlagName, out var dialogFlag) // review(26.06.2024): спокойно заменяется на Contains
+                && !GameState.IsNowTextDisplayed)                                 // review(27.06.2024): Это свойство используется только этим классом. Может, стоило сделать его просто полем класса?
             {
                 textFrame.text = string.Empty;
                 isDialog = true;
@@ -79,6 +79,6 @@ public class PinterSpecifics : MonoBehaviour
         if (freezePlayer)
             GameState.ActivePlayer.isActive = true;
         GameState.IsNowTextDisplayed = false;
-        waitingTimeInterval = 0.065f;
+        waitingTimeInterval = 0.065f; // review(27.06.2024): магическая константа
     }
 }

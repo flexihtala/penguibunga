@@ -7,7 +7,7 @@ public class PlayerTrigger : MonoBehaviour
     public bool isGrounded;
     public Player otherPlayer;
     public bool isOnMovingPlatform;
-    public HashSet<GameObject> triggeredInteractableObjects = new();
+    public HashSet<GameObject> triggeredInteractableObjects = new(); // review(27.06.2024): Разве GameObject можно использовать в Dictionary/HashSet?
     private MovingObject movingPlatform;
 
     private GameObject otherObject;

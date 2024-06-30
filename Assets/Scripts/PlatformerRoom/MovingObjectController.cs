@@ -1,4 +1,6 @@
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class MovingObject : MonoBehaviour
 {
@@ -37,7 +39,8 @@ public class MovingObject : MonoBehaviour
 
     private void Update()
     {
-        if (DistanceX > 1e-6)
+        // review(26.06.2024): Я убежден, что DistanceX, DistanceY вполне можно заменить на 2d вектор
+        if (DistanceX > 1e-6) // review(26.06.2024): Стоило вынести константу либо метод добавить на корректную проверку == 0
             MoveX();
         if (DistanceY > 1e-6)
             MoveY();
@@ -69,6 +72,17 @@ public class MovingObject : MonoBehaviour
         }
     }
 
+    // review(26.06.2024): Не поленился и сократил код до нескольких строчек. Вангую, можно пойти еще дальше и не потерять в понятности
+    private void MoveX2()
+    {
+        var position = transform.position;
+        DeltaX = (movingLeft ? -Speed : Speed) * Time.deltaTime;
+
+        if (position.x > leftEdge && position.x < rightEdge)
+            transform.position = position + new Vector3(DeltaX, 0, 0);
+        else
+            movingLeft = !movingLeft;
+    }
 
     private void MoveX()
     {

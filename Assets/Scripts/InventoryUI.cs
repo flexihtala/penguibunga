@@ -7,7 +7,7 @@ public class InventoryUI : MonoBehaviour
     
     private void Start()
     {
-        Inventory.OnItemChangedCallback += UpdateUI;
+        Inventory.OnItemChangedCallback += UpdateUI; // review(27.06.2024): О, проявление MVC
         slots = transform.GetComponentsInChildren<InventorySlot>();
     }
 
@@ -15,7 +15,7 @@ public class InventoryUI : MonoBehaviour
     {
         Debug.Log("Updating UI");
         Debug.Log(Inventory.PlayerInventory);
-        var playerInventoryValues = Inventory.PlayerInventory.Values.ToArray();
+        var playerInventoryValues = Inventory.PlayerInventory.Values.ToArray(); // review(27.06.2024): Inventory.GetAll() -> Item[]
         for (var i = 0; i < slots.Length; i++)
         {
             if (i < Inventory.PlayerInventory.Count)

@@ -17,7 +17,7 @@ public class MusicChanger : MonoBehaviour
     {
         if (other.CompareTag("Player") && music != GameState.CurrentMusic)
         {
-            GameState.CurrentMusic = music;
+            GameState.CurrentMusic = music; // review(26.06.2024): Коль скоро вы задаете исходную музыку в самом audioManager, то стоило и изменение CurrentMusic поместить в audioManager.ChangeMusic
             audioManager.ChangeMusic(music);
         }
     }

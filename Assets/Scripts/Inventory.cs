@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour // review(27.06.2024): А зачем отнаследовали статический класс от MonoBehaviour?
 {
     public static Dictionary<ItemName, Item> PlayerInventory;
 

@@ -41,7 +41,8 @@ public class EndToilet : MonoBehaviour
         inventory.SetActive(false);
 
         GameState.ActivePlayer.isActive = false;
-        
+
+        // review(27.06.2024): Я бы создал дикт PenguinNames -> Animator и упростил логику
         if (GameState.ActivePlayer.penguinName != PenguinNames.Cago)
             CagoAnimator.SetBool("IsGameOver", true);
 
@@ -60,7 +61,7 @@ public class EndToilet : MonoBehaviour
     private IEnumerator WaitTime()
     {
         GameState.ChecksBool.Add(DialogFlagEnum.End);
-        while (Math.Abs(EndCanvas.alpha - 1) >= 1e-9)
+        while (Math.Abs(EndCanvas.alpha - 1) >= 1e-9) // review(27.06.2024): Как будто не хватает extension-метода static bool IsEqualTo(this float number, float other, float accuracy = 1e-6)
         {
             EndCanvas.alpha += 0.005f;
             yield return null;
